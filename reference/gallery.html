@@ -1,0 +1,42 @@
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  gallery.html  —  GALLERY PAGE SECTION                      ║
+  ║                                                              ║
+  ║  Displays a 3-column grid of project thumbnails.            ║
+  ║  The heading and grid items are populated dynamically       ║
+  ║  by populateGallery() in main.js when the user clicks a     ║
+  ║  category card on the Work page.                            ║
+  ║                                                              ║
+  ║  To add/edit projects update galleryData in main.js.        ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+
+<section id="gallery" class="page">
+
+  <!-- Section heading — text is set dynamically by main.js -->
+  <div class="section-header animate-in">
+    <p class="section-sub"  id="gallery-sub">Category</p>
+    <h2 class="section-title" id="gallery-title">Gallery</h2>
+    <div class="section-header-torn"></div>
+
+    <!-- Back button — returns to the Work categories page -->
+    <button class="back-btn" style="margin-top:20px;" onclick="showPage('work')">
+      All Categories
+    </button>
+  </div>
+
+  <!--
+    Gallery grid — populated by populateGallery() in main.js.
+    Each item renders as:
+
+    <div class="gallery-item animate-in" onclick="showDetail('Title', 'Category')">
+      <div class="gallery-torn-bg"></div>
+      <div class="gallery-item-inner"></div>
+      <span class="gallery-item-label">Title</span>
+    </div>
+  -->
+  <div class="gallery-grid" id="gallery-grid">
+    <!-- JS inserts cards here -->
+  </div>
+
+</section>
