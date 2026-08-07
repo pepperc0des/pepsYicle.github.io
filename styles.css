@@ -1080,6 +1080,7 @@ nav {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(4px);
+  overflow: hidden;
 }
 
 .modal-overlay.open {
@@ -1089,10 +1090,13 @@ nav {
 .modal-inner {
   position: relative;
   background: var(--floral);
-  max-width: 600px;
-  width: 90%;
-  padding: 20px;
+  max-width: 90vw;
+  width: 90vw;
+  height: 90vh;
+  padding: 40px 20px 20px;
   box-shadow: 0 20px 60px rgba(17,18,13,0.4);
+  margin: auto;
+  overflow: hidden;
 }
 
 .modal-close {
@@ -1114,13 +1118,9 @@ nav {
 
 .modal-resume-inner {
   width: 100%;
-  aspect-ratio: 8.5 / 11;
-  background: white;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--olive);
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  border: 1px solid rgba(86,84,73,0.2);
+  overflow: hidden;
 }
