@@ -171,6 +171,10 @@ if (modal) {
   });
 }
 
+// Close resume modal with Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeResumeModal();
+});
 
 // ──────────────────────────────────────────
 // INITIAL PAGE LOAD
