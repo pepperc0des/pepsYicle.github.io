@@ -134,9 +134,8 @@ function showDetail(title, category) {
 // ──────────────────────────────────────────
 const softwares = [
   'Blender', 'After Effects', 'Figma',
-  'Illustrator', 'Cinema 4D', 'Photoshop',
+  'Illustrator', 'InDesign', 'Photoshop',
   'Premiere', 'DaVinci', 'Procreate',
-  'Rhino', 'ZBrush', 'Unity',
 ];
 
 (function buildSoftwareGrid() {
