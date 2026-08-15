@@ -719,6 +719,46 @@ nav {
   color: var(--olive);
 }
 
+/* Image lightbox overlay */
+.img-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(17,18,13,0.9);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  cursor: none;
+}
+
+.img-overlay.open {
+  display: flex;
+}
+
+.img-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(17,18,13,0.5);
+}
+
+.img-overlay-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: var(--floral);
+  font-size: 1.5rem;
+  cursor: none;
+  opacity: 0.6;
+}
+
+.img-overlay-close:hover {
+  opacity: 1;
+}
+
 
 /* ============================================================
    ABOUT PAGE  (about.html)
@@ -1059,7 +1099,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.62rem;
+  font-size: 0.90rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--floral);

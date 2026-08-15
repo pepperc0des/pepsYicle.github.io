@@ -86,7 +86,7 @@ const galleryData = {
   '3D Work':           ['Abstract Forms', 'Character Sculpt', 'Architectural Viz', 'Motion Sculpture', 'Product Render', 'Environment Study'],
   'Video & Animation': ['Title Sequence', 'Motion Loop', 'Short Film', 'Lyric Video', 'Brand Animation', 'Experimental Cut'],
   'UX / UI Design':    ['Mobile App', 'Web Dashboard', 'Design System', 'Prototype Flow', 'User Research', 'Brand Identity'],
-  'Graphic Design':    ['Poster Series', 'Editorial Layout', 'Zine', 'Brand Collateral', 'Type Study', 'Exhibition Design'],
+  'Graphic Design':    ['Adoption Poster Series', 'Editorial Layout', 'Zine', 'Brand Collateral', 'Type Study', 'Exhibition Design'],
 };
 
 /**
@@ -111,22 +111,89 @@ function populateGallery(category) {
  * Fills in the project-detail page and navigates to it.
  */
 function showDetail(title, category) {
+
+  // ── ADD YOUR PROJECTS HERE ──
+  const projects = {
+    'Adoption Poster Series': {
+      description: 'This was one of my first projects I did to crawl into the field of graphic design. ' +
+      'I created a series of adoption posters for different cat breeds as a tribute to my love for cats and dream of having on myself.' +
+      'I made each poster via Canva and used a combination of stock images to create a visually appealing design. I used color schemes that' +
+      'complemented the cat breeds and added text that highlighted their unique characteristics. The goal of this project was to create a' +
+      'series of posters that would encourage people to adopt cats and raise awareness about the importance of animal welfare.', 
+      tags: ['Canva', '2024'],
+      images: {
+        main: 'assets/Ragdoll Adopt Ad (1).jpg',
+        a:    'assets/Maine Coon Adopt Ad (1).jpg',
+        b:    'assets/British Shorthair Adopt Ad (1).jpg',
+      }
+    },
+    'Another Project': {
+      description: 'Description for your second project.',
+      tags: ['Figma', 'UX', '2025'],
+      images: {
+        main: 'assets/project2-main.jpg',
+        a:    'assets/project2-a.jpg',
+        b:    'assets/project2-b.jpg',
+      }
+    },
+  };
+
+  const project = projects[title];
+
   document.getElementById('detail-title').textContent    = title;
   document.getElementById('detail-category').textContent = category;
-  document.getElementById('detail-desc').textContent     =
-    `This is an in-depth look at "${title}". Describe your creative process here — ` +
-    `the concept, the tools, the challenges, and what you learned. ` +
-    `Replace this placeholder with a rich description of your actual work ` +
-    `and what makes it meaningful to you.`;
+  document.getElementById('detail-desc').textContent     = project.description;
+  document.getElementById('detail-tags').innerHTML       =
+  project.tags.map(t => `<span class="detail-tag">${t}</span>`).join('');
 
-  document.getElementById('detail-tags').innerHTML =
-    ['Placeholder Tool', category.split(' ')[0], '2024']
-      .map(t => `<span class="detail-tag">${t}</span>`)
-      .join('');
+  // Swap in your real images
+  const imgs = document.querySelectorAll('.detail-img-fill');
+  imgs[0].style.backgroundImage    = `url('${project.images.main}')`;
+  imgs[0].style.backgroundSize     = 'contain';
+  imgs[0].style.backgroundRepeat   = 'no-repeat';
+  imgs[0].style.backgroundPosition = 'center';
+  imgs[0].style.cursor             = 'pointer';
+  imgs[0].onclick                  = () => openImgOverlay(project.images.main);
+
+  imgs[1].style.backgroundImage = `url('${project.images.a}')`;
+  imgs[1].style.backgroundSize  = 'contain';
+  imgs[1].style.backgroundRepeat = 'no-repeat';
+  imgs[1].style.backgroundPosition = 'center';
+  imgs[1].style.cursor          = 'pointer';
+  imgs[1].onclick               = () => openImgOverlay(project.images.a);
+
+  imgs[2].style.backgroundImage = `url('${project.images.b}')`;
+  imgs[2].style.backgroundSize  = 'contain';
+  imgs[2].style.backgroundRepeat = 'no-repeat';
+  imgs[2].style.backgroundPosition = 'center';
+  imgs[2].style.cursor          = 'pointer';
+  imgs[2].onclick               = () => openImgOverlay(project.images.b);
 
   showPage('project-detail');
 }
+  
+// ── Image Lightbox ──
+function openImgOverlay(src) {
+  document.getElementById('img-overlay-src').src = src;
+  document.getElementById('img-overlay').classList.add('open');
+}
 
+function closeImgOverlay() {
+  document.getElementById('img-overlay').classList.remove('open');
+}
+
+// Close on backdrop click
+document.getElementById('img-overlay').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeImgOverlay();
+});
+
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeResumeModal();
+    closeImgOverlay();
+  }
+});
 
 // ──────────────────────────────────────────
 // SOFTWARE BUBBLES
@@ -169,11 +236,6 @@ if (modal) {
     if (e.target === e.currentTarget) closeResumeModal();
   });
 }
-
-// Close resume modal with Escape key
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeResumeModal();
-});
 
 // ──────────────────────────────────────────
 // INITIAL PAGE LOAD
