@@ -83,10 +83,10 @@ function backToGallery() {
 // Edit these arrays to add / rename projects.
 // ──────────────────────────────────────────
 const galleryData = {
-  '3D Work':           ['Abstract Forms', 'Character Sculpt', 'Architectural Viz', 'Motion Sculpture', 'Product Render', 'Environment Study'],
+  '3D Work':           ['Salt Keychain', 'Character Sculpt', 'Architectural Viz', 'Motion Sculpture', 'Product Render', 'Environment Study'],
   'Video & Animation': ['Title Sequence', 'Motion Loop', 'Short Film', 'Lyric Video', 'Brand Animation', 'Experimental Cut'],
-  'UX / UI Design':    ['Mobile App', 'Web Dashboard', 'Design System', 'Prototype Flow', 'User Research', 'Brand Identity'],
-  'Graphic Design':    ['Adoption Poster Series', 'Editorial Layout', 'Zine', 'Brand Collateral', 'Type Study', 'Exhibition Design'],
+  'Projects':    ['Ubiq Spatial Media App', 'Playing Cards', 'Airport Kid\'s Diner', 'Prototype Flow', 'Rock Paper Scissors', 'Brand Identity'],
+  'Designs':    ['Adoption Poster Series', 'Labubu Login Page', 'Zine', 'Brand Collateral', 'Type Study', 'Exhibition Design'],
 };
 
 /**
