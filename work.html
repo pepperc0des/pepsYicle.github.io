@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Yi Li</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top-ribbon"><span class="fill"></span><span class="gray"></span><span class="coral"></span></div>
+
+<nav>
+  <a class="nav-mark" href="home.html">Yi Li</a>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="work.html" class="active">Work</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a class="resume-btn" href="./assets/Yi_Li_Resume_Updated (1).pdf" download>Download</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <h1>Recent work</h1>
+  </div>
+
+  <section id="work-grid-section">
+    <div class="wrap">
+      <p class="section-sub">A handful of projects, sorted however you'd like to browse them.</p>
+      <div class="filter-row" role="group" aria-label="Filter work by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="illustration">Illustration</button>
+        <button class="filter-btn" data-filter="print">Print</button>
+        <button class="filter-btn" data-filter="ui">UI</button>
+      </div>
+      <div class="work-grid">
+        <div class="work-card" data-cat="branding" style="background:var(--coral)">
+          <h3>Citrus Soda</h3>
+          <div class="meta-bar">Branding, packaging (2024)</div>
+        </div>
+        <div class="work-card" data-cat="print" style="background:var(--teal)">
+          <h3>Field Notes Zine</h3>
+          <div class="meta-bar">Editorial, print (2023)</div>
+        </div>
+        <div class="work-card" data-cat="illustration" style="background:var(--plum)">
+          <h3>Moth &amp; Pine</h3>
+          <div class="meta-bar">Illustration, posters (2024)</div>
+        </div>
+        <div class="work-card" data-cat="ui" style="background:var(--marigold)">
+          <h3 style="color:var(--plum)">Nook</h3>
+          <div class="meta-bar">UI, illustration (2022)</div>
+        </div>
+        <div class="work-card" data-cat="print" style="background:var(--coral)">
+          <h3>Paper Trail</h3>
+          <div class="meta-bar">Stationery, print (2023)</div>
+        </div>
+        <div class="work-card" data-cat="branding" style="background:var(--teal)">
+          <h3>Harbor Fest</h3>
+          <div class="meta-bar">Branding, signage (2024)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="slim-footer">
+  <div class="slim-footer-inner">
+    <span>&copy; Yi Li</span>
+    <div>
+      <a href="contact.html">Contact</a>
+      <a href="#">Instagram</a>
+      <a href="#">Email</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="filter.js"></script>
+</body>
+</html>
