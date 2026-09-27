@@ -4,80 +4,99 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Work — Yi Li</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="top-ribbon"><span class="fill"></span><span class="gray"></span><span class="coral"></span></div>
-
-<nav>
-  <a class="nav-mark" href="home.html">Yi Li</a>
-  <div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="work.html" class="active">Work</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-    <a class="resume-btn" href="./assets/Yi_Li_Resume_Updated (1).pdf" download>Download</a>
+<header class="topnav">
+  <div class="nav-inner">
+    <a class="brand" href="home.html"><span class="dot"></span>Yi Li</a>
+    <nav class="links">
+      <a href="work.html" class="active">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
-</nav>
+</header>
 
 <main>
-  <div class="page-header">
-    <h1>Recent work</h1>
-  </div>
-
-  <section id="work-grid-section">
-    <div class="wrap">
-      <p class="section-sub">A handful of projects, sorted however you'd like to browse them.</p>
-      <div class="filter-row" role="group" aria-label="Filter work by category">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="branding">Branding</button>
-        <button class="filter-btn" data-filter="illustration">Illustration</button>
-        <button class="filter-btn" data-filter="print">Print</button>
-        <button class="filter-btn" data-filter="ui">UI</button>
-      </div>
-      <div class="work-grid">
-        <div class="work-card" data-cat="branding" style="background:var(--coral)">
-          <h3>Citrus Soda</h3>
-          <div class="meta-bar">Branding, packaging (2024)</div>
-        </div>
-        <div class="work-card" data-cat="print" style="background:var(--teal)">
-          <h3>Field Notes Zine</h3>
-          <div class="meta-bar">Editorial, print (2023)</div>
-        </div>
-        <div class="work-card" data-cat="illustration" style="background:var(--plum)">
-          <h3>Moth &amp; Pine</h3>
-          <div class="meta-bar">Illustration, posters (2024)</div>
-        </div>
-        <div class="work-card" data-cat="ui" style="background:var(--marigold)">
-          <h3 style="color:var(--plum)">Nook</h3>
-          <div class="meta-bar">UI, illustration (2022)</div>
-        </div>
-        <div class="work-card" data-cat="print" style="background:var(--coral)">
-          <h3>Paper Trail</h3>
-          <div class="meta-bar">Stationery, print (2023)</div>
-        </div>
-        <div class="work-card" data-cat="branding" style="background:var(--teal)">
-          <h3>Harbor Fest</h3>
-          <div class="meta-bar">Branding, signage (2024)</div>
-        </div>
-      </div>
+  <section class="page">
+    <div class="wrap page-head">
+      <h1>Selected work</h1>
+      <p>A list of brand and product projects. Click any project for the full breakdown.</p>
+    </div>
+    <div class="wrap filters" id="filters"></div>
+    <div class="wrap grid-work-wrap">
+      <button class="scroll-arrow left" id="arrow-left" onclick="scrollGallery(-1)" aria-label="Scroll left">&larr;</button>
+      <div class="grid-work" id="grid"></div>
+      <button class="scroll-arrow right" id="arrow-right" onclick="scrollGallery(1)" aria-label="Scroll right">&rarr;</button>
     </div>
   </section>
 </main>
 
-<footer class="slim-footer">
-  <div class="slim-footer-inner">
-    <span>&copy; Yi Li</span>
-    <div>
-      <a href="contact.html">Contact</a>
-      <a href="#">Instagram</a>
-      <a href="#">Email</a>
-      <a href="#">LinkedIn</a>
-    </div>
-  </div>
+<footer class="wrap">
+  <span>&copy; 2026 Yi Li</span>
+  <span>Brooklyn, NY</span>
 </footer>
 
-<script src="filter.js"></script>
+<script src="main.js"></script>
+<script>
+let activeFilter = 'all';
+
+function renderFilters(){
+  const filtersEl = document.getElementById('filters');
+  filtersEl.innerHTML = categories.map(c =>
+    `<button class="filter-btn ${c.id===activeFilter?'active':''}" data-cat="${c.id}">${c.label}</button>`
+  ).join('');
+  filtersEl.querySelectorAll('.filter-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      activeFilter = btn.dataset.cat;
+      filtersEl.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      renderGrid();
+    });
+  });
+}
+
+function renderGrid(){
+  const gridEl = document.getElementById('grid');
+  const list = activeFilter === 'all' ? projects : projects.filter(p=>p.category===activeFilter);
+  gridEl.innerHTML = list.map(p => `
+    <a class="card" href="project.html?id=${p.id}">
+      <div class="card-thumb" style="background:var(--${p.accent})">${svgShape(shapeMap[p.id])}</div>
+      <div class="card-meta"><h3>${p.title}</h3><span>${p.year}</span></div>
+      <div class="card-tag" style="color:var(--${p.accent})">${categories.find(c=>c.id===p.category).label}</div>
+    </a>
+  `).join('');
+  gridEl.scrollLeft = 0;
+  updateArrows();
+  gridEl.removeEventListener('scroll', updateArrows);
+  gridEl.addEventListener('scroll', updateArrows);
+}
+
+function scrollGallery(dir){
+  const gridEl = document.getElementById('grid');
+  if(!gridEl) return;
+  const cardWidth = gridEl.querySelector('.card')?.offsetWidth || 300;
+  gridEl.scrollBy({left: dir * (cardWidth + 26) * 2, behavior:'smooth'});
+}
+
+function updateArrows(){
+  const gridEl = document.getElementById('grid');
+  const left = document.getElementById('arrow-left');
+  const right = document.getElementById('arrow-right');
+  if(!gridEl || !left || !right) return;
+  left.disabled = gridEl.scrollLeft < 8;
+  right.disabled = gridEl.scrollLeft >= gridEl.scrollWidth - gridEl.clientWidth - 8;
+}
+
+window.addEventListener('resize', updateArrows);
+renderFilters();
+renderGrid();
+</script>
+
 </body>
 </html>

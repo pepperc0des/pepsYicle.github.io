@@ -4,61 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resume — Yi Li</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="top-ribbon"><span class="fill"></span><span class="gray"></span><span class="coral"></span></div>
-
-<nav>
-  <a class="nav-mark" href="home.html">Yi Li</a>
-  <div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="work.html">Work</a>
-    <a href="resume.html" class="active">Resume</a>
-    <a href="contact.html">Contact</a>
-    <a class="resume-btn" href="Yi_Li_Resume_Updated.pdf" download>Download</a>
+<header class="topnav">
+  <div class="nav-inner">
+    <a class="brand" href="home.html"><span class="dot"></span>Yi Li</a>
+    <nav class="links">
+      <a href="work.html">Work</a>
+      <a href="resume.html" class="active">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
-</nav>
+</header>
 
 <main>
-  <div class="page-header">
-    <h1>Resume &amp; toolkit</h1>
-  </div>
-
-  <div class="wrap resume-toolkit">
-    <p class="section-sub">What I've done, and what I make it with.</p>
-    <div class="rt-grid">
-      <div class="resume-panel">
-        <h3>Resume</h3>
-        <div class="resume-placeholder"><img src="./assets/Yi_Li_Resume_Updated (1).pdf" alt=""></div>
-        <!-- Replace with a link to your actual resume file (PDF) -->
-        <a class="resume-btn-inline" href="./assets/Yi_Li_Resume_Updated (1).pdf" download>Download resume</a>
+  <section class="page">
+    <div class="wrap resume-head">
+      <h1>Resume</h1>
+      <a class="btn primary" href="./assets/Yi_Li_Resume_Updated.pdf" download>Download / Print PDF</a>
+    </div>
+    <div class="wrap resume-grid">
+      <div class="doc pdf-doc">
+        <div class="pdf-frame">
+          <iframe src="./assets/Yi_Li_Resume_Updated.pdf" title="Resume PDF"></iframe>
+        </div>
       </div>
-      <div class="tool-circles">
-        <div class="tool"><div class="tool-badge">Ai</div><span class="label">Illustrator</span></div>
-        <div class="tool"><div class="tool-badge">Ps</div><span class="label">Photoshop</span></div>
-        <div class="tool"><div class="tool-badge">Id</div><span class="label">InDesign</span></div>
-        <div class="tool"><div class="tool-badge">Fg</div><span class="label">Figma</span></div>
-        <div class="tool"><div class="tool-badge">Pr</div><span class="label">Procreate</span></div>
-        <div class="tool"><div class="tool-badge">Ae</div><span class="label">After Effects</span></div>
-        <div class="tool"><div class="tool-badge">Blender</div><span class="label">Blender</span></div>
+      <div>
+        <div class="soft-title">Software</div>
+        <div class="soft-grid" id="softGrid"></div>
       </div>
     </div>
-  </div>
+  </section>
 </main>
 
-<footer class="slim-footer">
-  <div class="slim-footer-inner">
-    <span>&copy; Yi Li</span>
-    <div>
-      <a href="contact.html">Contact</a>
-      <a href="#">Instagram</a>
-      <a href="#">Email</a>
-      <a href="#">LinkedIn</a>
-    </div>
-  </div>
+<footer class="wrap">
+  <span>&copy; 2026 Yi Li</span>
+  <span>Brooklyn, NY</span>
 </footer>
+
+<script src="main.js"></script>
+<script>
+document.getElementById('softGrid').innerHTML = software.map(s => `
+  <div class="soft-item">
+    <div class="soft-circle">${s.abbr}</div>
+    <span>${s.name}</span>
+  </div>`).join('');
+</script>
 
 </body>
 </html>
