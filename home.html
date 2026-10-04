@@ -1,144 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yi Li — Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yi — Design Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header class="topnav">
-  <div class="nav-inner">
-    <a class="brand" href="home.html"><span class="dot"></span>Yi Li</a>
-    <nav class="links">
-      <a href="work.html">Work</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
+<!-- watercolor-style wobble used by the illustrations -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="wc"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="6"/></filter></svg>
+<div class="bg-shapes" aria-hidden="true"><i class="s1"></i><i class="s2"></i><i class="s3"></i></div>
+<div class="wrap">
+  <header>
+    <a href="#/home" aria-label="Home"><img class="logo" src="./assets/pepper_logo.png" alt="Yi logo"></a>
+    <nav aria-label="Main">
+      <a href="#/work" data-r="work">Work</a>
+      <a href="#/resume" data-r="resume">Resume</a>
+      <a href="#/contact" data-r="contact">Contact</a>
     </nav>
-  </div>
-</header>
-
-<main>
-  <section class="page">
-    <div class="hero">
-      <div class="wrap hero-grid">
-        <div class="blob" id="heroBlob"></div>
-        <div class="hero-copy">
-          <div class="eyebrow">Product &amp; brand designer — based in Brooklyn, NY</div>
-          <h1>Yi Li</h1>
-          <p class="lead">I design brand identities and digital products for teams who need the work to hold up under daily use, not just in a pitch deck. Ten years, six industries, one design system philosophy.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="work.html">See the work</a>
-            <a class="btn ghost" href="resume.html">Resume</a>
-          </div>
-        </div>
-      </div>
-      <div class="stripe"></div>
-    </div>
-
-    <div class="about wrap">
-      <div class="about-grid">
-        <div>
-          <div class="about-photo" id="aboutPhoto">
-            <img src="profile.jpg" alt="Profile photo" onerror="handleImgError()">
-            <div class="photo-fallback" id="photoFallback">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c1.4-3.6 4.4-5.5 7.5-5.5s6.1 1.9 7.5 5.5"/></svg>
-              <span>Add profile.jpg</span>
-            </div>
-          </div>
-          <div class="section-label">About</div>
-          <h2>Design that has to work on a Tuesday, not just in a review.</h2>
-          <p>I started out doing print identity work, which taught me that a good system has to survive being reproduced badly by someone in a hurry. That's shaped how I approach product design since — fewer precious details, more decisions that hold up when three other people are also touching the file.</p>
-          <p>Lately I split my time between early-stage product work and identity projects for small studios and makers, usually for teams shipping their first real design system.</p>
-        </div>
-        <ul class="do-list">
-          <li>
-            <span class="mark"></span>
-            <div><h3>Brand identity</h3><p>Naming, mark, typography and the guidelines that keep it consistent after I've left the project.</p></div>
-          </li>
-          <li>
-            <span class="mark"></span>
-            <div><h3>Product design</h3><p>Research-backed UX and interfaces for web and mobile, built on systems your engineers will actually keep using.</p></div>
-          </li>
-          <li>
-            <span class="mark"></span>
-            <div><h3>Motion &amp; interaction</h3><p>Small, purposeful animation — the kind that explains a state change instead of decorating one.</p></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="hobbies-block">
-        <div class="head-row">
-          <h2>Off the clock</h2>
-          <span class="hint">Drag them around &#8599;</span>
-        </div>
-        <div class="hobby-box" id="hobbyBox"></div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="wrap">
-  <span>&copy; 2026 Yi Li</span>
-  <span>Brooklyn, NY</span>
-</footer>
-
-<script src="main.js"></script>
-<script>
-document.getElementById('heroBlob').innerHTML = svgShape('grid');
-
-function handleImgError(){
-  const img = document.querySelector('#aboutPhoto img');
-  const fb = document.getElementById('photoFallback');
-  if(img) img.style.display='none';
-  if(fb) fb.style.display='flex';
-}
-
-function initHobbies(){
-  const box = document.getElementById('hobbyBox');
-  if(!box) return;
-  box.innerHTML = hobbies.map((h,i)=>`
-    <span class="hobby-pill tone-${h.tone}" style="top:${h.top}; left:${h.left}; animation-delay:-${(i*0.7).toFixed(1)}s;">${h.label}</span>
-  `).join('');
-  box.querySelectorAll('.hobby-pill').forEach(pill => makeDraggable(pill, box));
-}
-
-function makeDraggable(el, container){
-  let dragging = false, offsetX = 0, offsetY = 0;
-  el.addEventListener('pointerdown', e=>{
-    dragging = true;
-    el.setPointerCapture(e.pointerId);
-    el.style.animationPlayState = 'paused';
-    el.style.zIndex = 10;
-    const rect = el.getBoundingClientRect();
-    offsetX = e.clientX - rect.left;
-    offsetY = e.clientY - rect.top;
-  });
-  el.addEventListener('pointermove', e=>{
-    if(!dragging) return;
-    const cRect = container.getBoundingClientRect();
-    let x = e.clientX - cRect.left - offsetX;
-    let y = e.clientY - cRect.top - offsetY;
-    x = Math.max(0, Math.min(x, cRect.width - el.offsetWidth));
-    y = Math.max(0, Math.min(y, cRect.height - el.offsetHeight));
-    el.style.left = x + 'px';
-    el.style.top = y + 'px';
-  });
-  const endDrag = ()=>{
-    if(!dragging) return;
-    dragging = false;
-    el.style.animationPlayState = 'running';
-  };
-  el.addEventListener('pointerup', endDrag);
-  el.addEventListener('pointercancel', endDrag);
-}
-
-initHobbies();
-</script>
-
+  </header>
+  <main id="app"></main>
+</div>
+<footer><div class="wrap"><span>© 2026 Yi</span><button id="theme" type="button">Dark mode</button></div></footer>
+<script src="js/content.js"></script>
+<script src="js/core.js"></script>
+<script src="js/illustrations.js"></script>
+<script src="js/assets.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/bubbles.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
