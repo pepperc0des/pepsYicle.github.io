@@ -91,6 +91,12 @@ header {
   align-items: center;
   padding: 20px 0;
 }
+@media (min-width: 1440px) {
+  header {
+    width: calc(100% + 160px);
+    margin-inline: -80px;
+  }
+}
 .logo {
   display: block;
   width: 56px;
