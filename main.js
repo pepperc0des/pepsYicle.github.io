@@ -134,7 +134,7 @@ const slug = (w) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
 const WC = 'style="filter:url(#wc)"';
-const DEFAULT_NOTE = "Drag the bubbles around. Tap one to learn more.";
+const DEFAULT_NOTE = "";
  
 /* ======================================================================
    ILLUSTRATIONS: coded art and title tiles
