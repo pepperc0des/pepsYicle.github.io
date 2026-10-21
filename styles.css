@@ -668,6 +668,80 @@ footer button {
   color: var(--bg);
 }
 
+.shelf-h {
+  font: 600 0.8rem/1 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--water);
+  margin: 8px 0 16px;
+}
+.shelf-h.more {
+  margin-top: 56px;
+}
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px 20px;
+  margin-bottom: 56px;
+}
+.mini {
+  text-decoration: none;
+  color: inherit;
+}
+.mini .tile {
+  aspect-ratio: 1;
+}
+.mini:hover .tile {
+  border-radius: 64px 12px 12px 12px;
+}
+.mini h3 {
+  font-size: 1.05rem;
+  margin-top: 10px;
+}
+
+/* ---------- image lightbox ---------- */
+
+.prj .tile img {
+  cursor: zoom-in;
+}
+#lightbox {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  padding: 24px;
+  border: 0;
+  background: transparent;
+}
+#lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+#lightbox::backdrop {
+  background: rgba(26, 26, 26, 0.92);
+}
+#lightbox img {
+  max-width: 100%;
+  max-height: calc(100vh - 48px);
+  object-fit: contain;
+  border-radius: 12px;
+  cursor: zoom-out;
+}
+.lb-close {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid #ededed;
+  background: transparent;
+  color: #ededed;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 /* ---------- project page ---------- */
 
 .back {

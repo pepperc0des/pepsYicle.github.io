@@ -34,6 +34,10 @@ const FILES = {
   "work-maine-coon-adopt-ad": "projects/Maine Coon Adopt Ad (1).jpg",
   "work-ragdoll-adopt-ad": "projects/Ragdoll Adopt Ad (1).jpg",
   "work-isometric-room": "projects/Isometric_Room.jpg",
+  "work-sky-high-diner-menu": "projects/DMUY1123_fa25_YiLi_menu_final.jpg",
+  "work-sky-high-diner-menu-1": "projects/DMUY1123_fa25_YiLi_menu_sketch.jpg",
+  "work-sky-high-diner-menu-2": "projects/DMUY1123_fa25_YiLi_menu_sketch_v2.jpg",
+  "work-sky-high-diner-menu-3": "projects/DMUY1123_fa25_YiLi_menu_draft.jpg",
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
 };
@@ -89,6 +93,7 @@ const WORK = [
     r: "Graphic design",
     c: ["#0A7136", "#EDEDED", "#229B36"],
     k: 0,
+    big: true,
     p: "An adoption advertisement design. Add the goal, audience and process here.",
   },
   {
@@ -117,6 +122,29 @@ const WORK = [
     c: ["#34791B", "#1A1A1A", "#EDEDED"],
     k: 3,
     p: "An isometric room illustration. Add the tools, concept and process here.",
+  },
+  
+  {
+    t: "Sky High Diner Menu",
+    d: "Graphic Design",
+    y: 2026,
+    r: "Graphic design, 3D illustration",
+    c: ["#0A715C", "#EDEDED", "#229B36"],
+    k: 4,
+    big: true,
+    p: "A playful kids' menu for Sky High Diner, an airplane-themed restaurant. Every dish has an aviation pun for a name, and the layout is built so a child can scan it and a parent can order from it quickly.",
+    s: [
+      ["Overview", `Sky High Diner is a made-up airplane-themed diner. I designed its kids' menu in a way to fit the theme of an airport: 
+        dishes like the Hangar Hot Dog, Jet Fuel Burger and Puffy Cloud Pork Bao, clouds, and a retro checkered diner backdrop. 
+        The goal was to make a menu that is fun to look at and easy to understand for both kids and parents`],
+      ["Tools",  `I used InDesign for the majority of the design, the layout,the typography and the chckered background. I used Blender for the 3D food models and the Sky High Diner bottle.`],
+      ["Process", `I started with a plain text layout to settle the content: main dishes, sides, drinks and ice cream, with each dish's description and price. 
+        In the second round I added clouds, a playful display font and a right-aligned price column, and brought in 3D renders of the food so the menu felt 
+        like the diner. The third round gave the menu its final identity: a blue checkered background, a scalloped border, a cloud title in red, and rounded 
+        white panels that group each section. I also split the main dishes into two columns so the page doesn't feel crowded.`],
+      ["Outcome", `The final menu keeps the whole page readable while still feeling playful, and the food renders do most of the selling. 
+        [Add where it lives now, any feedback you got, and what you'd do differently, such as testing the type size with real kids.]`],
+    ],
   },
 ];
 
@@ -373,6 +401,7 @@ function homePage() {
         </div>
       </div>
       <div class="field">${pillsHTML()}</div>
+      <p class="note" aria-live="polite"></p>
     </section>`;
 
   // wirePhotoUpload();
@@ -390,6 +419,14 @@ let activeFilter = "All";
 function workPage() {
   const categories = ["All", ...new Set(WORK.map((w) => w.d))];
   const projects = WORK.filter((w) => activeFilter === "All" || w.d === activeFilter);
+  const featured = projects.filter((w) => w.big);
+  const more = projects.filter((w) => !w.big);
+
+  const miniCard = (w) => `<a class="mini" href="#/work/${slug(w)}">
+      <div class="tile">${cover(w)}</div>
+      <h3>${w.t}</h3>
+      <p class="meta">${w.d}, ${w.y}</p>
+    </a>`;
 
   app.innerHTML = `
     ${sprigHTML()}
@@ -404,8 +441,11 @@ function workPage() {
         )
         .join("")}
     </div>
-    <div class="track" tabindex="0" aria-label="Projects, scroll horizontally">
-      ${projects
+    ${
+      featured.length
+        ? `<h3 class="shelf-h">Featured</h3>
+    <div class="track" tabindex="0" aria-label="Featured projects, scroll horizontally">
+      ${featured
         .map(
           (w) => `<a class="hcard" href="#/work/${slug(w)}">
             <div class="tile">${cover(w)}</div>
@@ -419,24 +459,34 @@ function workPage() {
       <button type="button" class="arrow" aria-label="Scroll left">←</button>
       <div class="bar"><i style="width:20%"></i></div>
       <button type="button" class="arrow" aria-label="Scroll right">→</button>
-    </div>`;
+    </div>`
+        : ""
+    }
+    ${
+      more.length
+        ? `<h3 class="shelf-h more">More projects</h3>
+    <div class="mini-grid">${more.map(miniCard).join("")}</div>`
+        : ""
+    }`;
 
-  const track = $(".track");
-  const progress = $(".bar i");
-  const [prev, next] = $$(".arrow");
-  const page = (direction) =>
-    track.scrollBy({
-      left: direction * track.clientWidth * 0.7,
-      behavior: reduceMotion ? "auto" : "smooth",
+   const track = $(".track");
+  if (track) {
+    const progress = $(".bar i");
+    const [prev, next] = $$(".arrow");
+    const page = (direction) =>
+      track.scrollBy({
+        left: direction * track.clientWidth * 0.7,
+        behavior: reduceMotion ? "auto" : "smooth",
+      });
+
+    prev.onclick = () => page(-1);
+    next.onclick = () => page(1);
+    track.addEventListener("scroll", () => {
+      const max = track.scrollWidth - track.clientWidth;
+      progress.style.width = `${20 + (max > 0 ? track.scrollLeft / max : 0) * 80}%`;
     });
-
-  prev.onclick = () => page(-1);
-  next.onclick = () => page(1);
-  track.addEventListener("scroll", () => {
-    const max = track.scrollWidth - track.clientWidth;
-    progress.style.width = `${20 + (max > 0 ? track.scrollLeft / max : 0) * 80}%`;
-  });
-  enableWheelScroll(track);
+    enableWheelScroll(track);
+  }
 
   $$(".tab").forEach((tab) => {
     tab.onclick = () => {
@@ -445,7 +495,6 @@ function workPage() {
     };
   });
 }
-
 /* Lets the mouse wheel scroll a horizontal track.
    - Each wheel notch eases toward its target instead of jumping.
    - Scroll-snap is switched off once the wheel is used (CSS .free-scroll), otherwise
@@ -509,6 +558,40 @@ function gallery(work) {
     .join("");
 }
 
+/* Click a project image to see it full size */
+function enableLightbox() {
+  const images = $$(".prj .tile img");
+  if (!images.length) return;
+
+  let box = $("#lightbox");
+  if (!box) {
+    box = document.createElement("dialog");
+    box.id = "lightbox";
+    box.innerHTML = `<button type="button" class="lb-close" aria-label="Close">×</button><img alt="">`;
+    box.addEventListener("click", () => box.close()); // click anywhere to close (Esc works too)
+    document.body.append(box);
+  }
+  const big = $("img", box);
+
+  images.forEach((img) => {
+    const open = () => {
+      big.src = img.src;
+      big.alt = img.alt;
+      box.showModal();
+    };
+    img.tabIndex = 0;
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "View larger");
+    img.addEventListener("click", open);
+    img.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        open();
+      }
+    });
+  });
+}
+
 function projectPage(projectSlug) {
   const index = WORK.findIndex((w) => slug(w) === projectSlug);
   if (index < 0) {
@@ -535,6 +618,8 @@ function projectPage(projectSlug) {
       <div class="pgal">${gallery(work)}</div>
       <a class="next" href="#/work/${slug(upNext)}">Next project: ${upNext.t}</a>
     </div>`;
+
+    enableLightbox();
 }
 
 /* ---------- resume ---------- */
@@ -542,7 +627,7 @@ function projectPage(projectSlug) {
 function resumePage() {
   const preview = assets.resume
     ? `<img src="${assets.resume}" alt="Preview of my resume">`
-      : `<object data="${RESUME_PDF}#toolbar=0&navpanes=0&view=FitH" type="application/pdf">>
+      : `<object data="${RESUME_PDF}#toolbar=0&navpanes=0&view=FitH" type="application/pdf">
          <p class="rfallback">Preview not available here. <a href="${RESUME_PDF}" target="_blank" rel="noopener">Open the PDF</a></p>
        </object>`;
 
