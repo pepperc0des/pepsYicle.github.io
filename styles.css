@@ -742,6 +742,18 @@ footer button {
   cursor: pointer;
 }
 
+.vid {
+  margin: 24px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+.vid video {
+  display: block;
+  width: 100%;
+  max-height: 80vh;
+}
+
 /* ---------- project page ---------- */
 
 .back {

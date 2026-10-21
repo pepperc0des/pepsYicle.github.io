@@ -108,7 +108,7 @@ const WORK = [
   {
     t: "Ragdoll Adopt Ad",
     d: "Graphic Design",
-    y: 2026,
+    y: 2024,
     r: "Graphic design",
     c: ["#0A715C", "#EDEDED", "#1A1A1A"],
     k: 2,
@@ -117,7 +117,7 @@ const WORK = [
   {
     t: "Isometric Room",
     d: "Illustration",
-    y: 2026,
+    y: 2024,
     r: "Illustration",
     c: ["#34791B", "#1A1A1A", "#EDEDED"],
     k: 3,
@@ -127,24 +127,55 @@ const WORK = [
   {
     t: "Sky High Diner Menu",
     d: "Graphic Design",
-    y: 2026,
+    y: 2025,
     r: "Graphic design, 3D illustration",
     c: ["#0A715C", "#EDEDED", "#229B36"],
     k: 4,
     big: true,
-    p: "A playful kids' menu for Sky High Diner, an airplane-themed restaurant. Every dish has an aviation pun for a name, and the layout is built so a child can scan it and a parent can order from it quickly.",
     s: [
-      ["Overview", `Sky High Diner is a made-up airplane-themed diner. I designed its kids' menu in a way to fit the theme of an airport: 
-        dishes like the Hangar Hot Dog, Jet Fuel Burger and Puffy Cloud Pork Bao, clouds, and a retro checkered diner backdrop. 
+      ["Overview", `A playful kids' menu for Sky High Diner, an airplane-themed diner at an international airport. 
+        Every dish has an aviation pun for a name, and the layout is built so a child can understand it and a parent can order from it quickly.
         The goal was to make a menu that is fun to look at and easy to understand for both kids and parents`],
-      ["Tools",  `I used InDesign for the majority of the design, the layout,the typography and the chckered background. I used Blender for the 3D food models and the Sky High Diner bottle.`],
-      ["Process", `I started with a plain text layout to settle the content: main dishes, sides, drinks and ice cream, with each dish's description and price. 
-        In the second round I added clouds, a playful display font and a right-aligned price column, and brought in 3D renders of the food so the menu felt 
-        like the diner. The third round gave the menu its final identity: a blue checkered background, a scalloped border, a cloud title in red, and rounded 
-        white panels that group each section. I also split the main dishes into two columns so the page doesn't feel crowded.`],
-      ["Outcome", `The final menu keeps the whole page readable while still feeling playful, and the food renders do most of the selling. 
-        [Add where it lives now, any feedback you got, and what you'd do differently, such as testing the type size with real kids.]`],
+      ["Tools",  `I used InDesign for the majority of the design, the layout, the typography and the checkered background. I used Blender for the 3D food models and the Sky High Diner bottle.`],
+      ["Process", `From left to right at the bottom of the page, I started with a plain layout to settle the content: 
+        main dishes, sides, drinks and ice cream, with each dish's description and price. At the same time,
+        I established a rough draft of the font hierarchy by the levels of importantance on a menu. In the second round I had an idea of incorporating some form of art and 
+        I went with 3D models to spice it up and move away from the traditional 2D artstyle most kids' menus have,
+        I placed the rendered food objects according to where they lie on the menu. So the 3D ice cream model would be placed in the ice cream section of the menu and the hot dog and burger 
+        would be placed respectively in the main dishes section. In the third round, I gave the menu its final shape: the bubbly typography, the clouds to go along with the airport theme,
+        more 3D art placed strategically, and even included a logo for the diner as suggested by the title and imprinted on the Milk bottle. For the final piece, I thought the spacing could be way better
+        with how the dishes are laid out on the menu with the placement of the 3D models. So I created individual boxes for each dish category and align the text as they fit. I added a blue checkered background to fit the "diner" vibe
+        and I added a border to give the menu more characteristics and to act as clouds, fitting the airport theme.`],
+      ["Outcome", `The final render keeps the whole menu readable while still feeling playful and kid-friendly, and the food renders do most of the selling. 
+        One thing I would do differently if I stared this project again is keeping the consistency with the typography of the dish categories and the title of the menu. 
+        Though they are both bubbly, the title is transparent while the dish category is filled in. Another thing I would do different is having a better contrast between the
+        menu boxes and the background. Right now, in some parts of the boxes, it looks as if it blends into the background rather than being it's separate shape. So I'm thinking of 
+        changing the color of the boxes or perhaps giving it an dark outline to highlight the boxes.`],
     ],
+  },
+  {
+    t: "Rock Paper Scissors",
+    d: "Graphic Design",
+    y: "2025",
+    r: "Graphic design, UX/UI",
+    c: ["#34791B", "#1A1A1A", "#EDEDED"],
+    k: 5,
+    big: true,
+    s: [
+      ["Overview", `A design for a conceptual rock paper scissors game app. This is a prototype, a test version of an app. 
+        Players should be able to use it easily with clicks, swipes, shakes, or taps without explicit written instructions. `],
+      ["Tools", `I used a pixel art software called Pixquare to create the rock, paper, scissor assets as well as the red and blue background.
+        For the wireframing and flowchart, I used Figma and importing my assets from Pixquare. Lastly I used Adobe After Effects for post production work
+        for the app demo video.`],
+      ["Process", `I started by mapping the whole game as a simple flow: Welcome, Pair with Partner, then either a successful pairing or a pairing error that loops back to try again. 
+        From there each player chooses rock, paper or scissors, waits for the opponent, and sees the result. Keeping the flow this short meant a round could start in a few taps. 
+        I then designed each step as a mobile screen: an intro with a Play button, a QR-code scan screen for finding an opponent, a "Scan Failed" screen with a 
+        Try again button, a versus screen once players are paired, a profile with stats, and the choose screen. For the results I designed all nine outcomes 
+        (win, lose and tie, each with rock, paper and scissors), so every combination gets its own screen. 
+        The look is built around the idea of two players facing off: the screen splits diagonally into red for the opponent and blue for you, with a pixel font and a grainy texture to give it a retro arcade feel. The same split carries through every screen so players always know which side is theirs.`],
+      ["Outcome", `The result is a complete, playable prototype of a two-player rock paper scissors game, with pairing, choosing, waiting and results all connected. 
+        The video above shows the prototype in use.`],
+    ]
   },
 ];
 
@@ -612,6 +643,7 @@ function projectPage(projectSlug) {
         <div><span>Role</span>${work.r}</div>
       </div>
       <div class="tile">${cover(work)}</div>
+      ${videoHTML(work)}
       ${sections(work)
         .map(([heading, text]) => `<div class="rs"><h2>${heading}</h2><p>${text}</p></div>`)
         .join("")}
