@@ -38,6 +38,10 @@ const FILES = {
   "work-sky-high-diner-menu-1": "projects/DMUY1123_fa25_YiLi_menu_sketch.jpg",
   "work-sky-high-diner-menu-2": "projects/DMUY1123_fa25_YiLi_menu_sketch_v2.jpg",
   "work-sky-high-diner-menu-3": "projects/DMUY1123_fa25_YiLi_menu_draft.jpg",
+  "work-rock-paper-scissors": "projects/DMUY1123_fa25_Yi_Li_wireframe.png",
+  "work-rock-paper-scissors-1": "projects/DMUY1123_fa_Yi_Li_draft.png",
+  "work-rock-paper-scissors-2": "projects/DMUY1123_fa25_Yi_Li_flowchart.png",
+  "work-rock-paper-scissors-3": "projects/DMUY1123_fa25_Yi_Li_wireframe w_ arrows.png",
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
 };
@@ -160,6 +164,7 @@ const WORK = [
     r: "Graphic design, UX/UI",
     c: ["#34791B", "#1A1A1A", "#EDEDED"],
     k: 5,
+    video: "projects/DMUY1123_fa25_Yi_Li_rps.mov_",
     big: true,
     s: [
       ["Overview", `A design for a conceptual rock paper scissors game app. This is a prototype, a test version of an app. 
@@ -167,12 +172,13 @@ const WORK = [
       ["Tools", `I used a pixel art software called Pixquare to create the rock, paper, scissor assets as well as the red and blue background.
         For the wireframing and flowchart, I used Figma and importing my assets from Pixquare. Lastly I used Adobe After Effects for post production work
         for the app demo video.`],
-      ["Process", `I started by mapping the whole game as a simple flow: Welcome, Pair with Partner, then either a successful pairing or a pairing error that loops back to try again. 
+      ["Process", `I started by mapping the whole game with a simple flowchart: Welcome, Pair with Partner, then either a successful pairing or a pairing error that loops back to try again. 
         From there each player chooses rock, paper or scissors, waits for the opponent, and sees the result. Keeping the flow this short meant a round could start in a few taps. 
-        I then designed each step as a mobile screen: an intro with a Play button, a QR-code scan screen for finding an opponent, a "Scan Failed" screen with a 
+        I then designed each step as a mobile screen: an home screen with a Play button, a QR-code scan screen for finding an opponent, a "Scan Failed" screen with a 
         Try again button, a versus screen once players are paired, a profile with stats, and the choose screen. For the results I designed all nine outcomes 
-        (win, lose and tie, each with rock, paper and scissors), so every combination gets its own screen. 
-        The look is built around the idea of two players facing off: the screen splits diagonally into red for the opponent and blue for you, with a pixel font and a grainy texture to give it a retro arcade feel. The same split carries through every screen so players always know which side is theirs.`],
+        (win, lose and tie, each with rock, paper and scissors), so every combination gets its own screen. The look is built around the idea of two 
+        players facing off: the screen splits diagonally into red for the opponent and blue for you, with a pixel font and a grainy texture to give 
+        it a retro arcade feel. The same split carries through every screen so players always know which side is theirs.`],
       ["Outcome", `The result is a complete, playable prototype of a two-player rock paper scissors game, with pairing, choosing, waiting and results all connected. 
         The video above shows the prototype in use.`],
     ]
@@ -622,6 +628,11 @@ function enableLightbox() {
     });
   });
 }
+
+const videoHTML = (work) =>
+  work.video
+    ? `<div class="vid"><video src="${encodeURI(work.video)}" controls playsinline preload="metadata"></video></div>`
+    : "";
 
 function projectPage(projectSlug) {
   const index = WORK.findIndex((w) => slug(w) === projectSlug);
