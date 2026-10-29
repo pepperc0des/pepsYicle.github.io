@@ -30,18 +30,55 @@ const FILES = {
   butterfly: "assets/Group 1.svg",
 
   // project covers
-  "work-british-shorthair-adopt-ad": "projects/British Shorthair Adopt Ad (1).jpg",
+  "work-british-shorthair-adopt-ad":
+    "projects/British Shorthair Adopt Ad (1).jpg",
   "work-maine-coon-adopt-ad": "projects/Maine Coon Adopt Ad (1).jpg",
   "work-ragdoll-adopt-ad": "projects/Ragdoll Adopt Ad (1).jpg",
   "work-isometric-room": "projects/Isometric_Room.jpg",
-  "work-sky-high-diner-menu": "projects/DMUY1123_fa25_YiLi_menu_final.jpg",
-  "work-sky-high-diner-menu-1": "projects/DMUY1123_fa25_YiLi_menu_sketch.jpg",
-  "work-sky-high-diner-menu-2": "projects/DMUY1123_fa25_YiLi_menu_sketch_v2.jpg",
-  "work-sky-high-diner-menu-3": "projects/DMUY1123_fa25_YiLi_menu_draft.jpg",
-  "work-rock-paper-scissors": "projects/DMUY1123_fa25_Yi_Li_wireframe.png",
-  "work-rock-paper-scissors-1": "projects/DMUY1123_fa_Yi_Li_draft.png",
-  "work-rock-paper-scissors-2": "projects/DMUY1123_fa25_Yi_Li_flowchart.png",
-  "work-rock-paper-scissors-3": "projects/DMUY1123_fa25_Yi_Li_wireframe w_ arrows.png",
+  "work-sky-high-diner-menu":
+    "projects/Kids_Menu/DMUY1123_fa25_YiLi_menu_final.jpg",
+  "work-sky-high-diner-menu-1":
+    "projects/Kids_Menu/DMUY1123_fa25_YiLi_menu_sketch.jpg",
+  "work-sky-high-diner-menu-2":
+    "projects/Kids_Menu/DMUY1123_fa25_YiLi_menu_sketch_v2.jpg",
+  "work-sky-high-diner-menu-3":
+    "projects/Kids_Menu/DMUY1123_fa25_YiLi_menu_draft.jpg",
+  "work-rock-paper-scissors-4":
+    "projects/RockPaperScissors/DMUY1123_fa25_Yi_Li_wireframe.png",
+  "work-rock-paper-scissors-1":
+    "projects/RockPaperScissors/DMUY1123_fa_Yi_Li_draft.png",
+  "work-rock-paper-scissors-2":
+    "projects/RockPaperScissors/DMUY1123_fa25_Yi_Li_flowchart.png",
+  "work-rock-paper-scissors-3":
+    "projects/RockPaperScissors/DMUY1123_fa25_Yi_Li_wireframe w_ arrows.png",
+  "work-playing-cards": "projects/PlayingCards/Playing_Cards_Printed.jpg",
+  "work-playing-cards-2":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_draft.pdf",
+  "work-playing-cards-3":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_draft_002.pdf",
+  "work-playing-cards-4":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_final.pdf",
+  "work-playing-cards-5":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_final_002.pdf",
+  "work-playing-cards-6":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_001.pdf",
+  "work-playing-cards-7":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_002.pdf",
+  "work-playing-cards-8":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_003.pdf",
+  "work-playing-cards-9":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_004.pdf",
+  "work-playing-cards-10":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_005.pdf",
+  "work-playing-cards-11":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_006.pdf",
+  "work-playing-cards-12":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_007.pdf",
+  "work-playing-cards-13":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_008.pdf",
+  "work-playing-cards-14":
+    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_006.pdf",
+
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
 };
@@ -97,7 +134,6 @@ const WORK = [
     r: "Graphic design",
     c: ["#0A7136", "#EDEDED", "#229B36"],
     k: 0,
-    big: true,
     p: "An adoption advertisement design. Add the goal, audience and process here.",
   },
   {
@@ -127,7 +163,7 @@ const WORK = [
     k: 3,
     p: "An isometric room illustration. Add the tools, concept and process here.",
   },
-  
+
   {
     t: "Sky High Diner Menu",
     d: "Graphic Design",
@@ -137,11 +173,19 @@ const WORK = [
     k: 4,
     big: true,
     s: [
-      ["Overview", `A playful kids' menu for Sky High Diner, an airplane-themed diner at an international airport. 
+      [
+        "Overview",
+        `A playful kids' menu for Sky High Diner, an airplane-themed diner at an international airport. 
         Every dish has an aviation pun for a name, and the layout is built so a child can understand it and a parent can order from it quickly.
-        The goal was to make a menu that is fun to look at and easy to understand for both kids and parents`],
-      ["Tools",  `I used InDesign for the majority of the design, the layout, the typography and the checkered background. I used Blender for the 3D food models and the Sky High Diner bottle.`],
-      ["Process", `From left to right at the bottom of the page, I started with a plain layout to settle the content: 
+        The goal was to make a menu that is fun to look at and easy to understand for both kids and parents`,
+      ],
+      [
+        "Tools",
+        `I used InDesign for the majority of the design, the layout, the typography and the checkered background. I used Blender for the 3D food models and the Sky High Diner bottle.`,
+      ],
+      [
+        "Process",
+        `From left to right at the bottom of the page, I started with a plain layout to settle the content: 
         main dishes, sides, drinks and ice cream, with each dish's description and price. At the same time,
         I established a rough draft of the font hierarchy by the levels of importantance on a menu. In the second round I had an idea of incorporating some form of art and 
         I went with 3D models to spice it up and move away from the traditional 2D artstyle most kids' menus have,
@@ -149,12 +193,16 @@ const WORK = [
         would be placed respectively in the main dishes section. In the third round, I gave the menu its final shape: the bubbly typography, the clouds to go along with the airport theme,
         more 3D art placed strategically, and even included a logo for the diner as suggested by the title and imprinted on the Milk bottle. For the final piece, I thought the spacing could be way better
         with how the dishes are laid out on the menu with the placement of the 3D models. So I created individual boxes for each dish category and align the text as they fit. I added a blue checkered background to fit the "diner" vibe
-        and I added a border to give the menu more characteristics and to act as clouds, fitting the airport theme.`],
-      ["Outcome", `The final render keeps the whole menu readable while still feeling playful and kid-friendly, and the food renders do most of the selling. 
+        and I added a border to give the menu more characteristics and to act as clouds, fitting the airport theme.`,
+      ],
+      [
+        "Outcome",
+        `The final render keeps the whole menu readable while still feeling playful and kid-friendly, and the food renders do most of the selling. 
         One thing I would do differently if I stared this project again is keeping the consistency with the typography of the dish categories and the title of the menu. 
         Though they are both bubbly, the title is transparent while the dish category is filled in. Another thing I would do different is having a better contrast between the
         menu boxes and the background. Right now, in some parts of the boxes, it looks as if it blends into the background rather than being it's separate shape. So I'm thinking of 
-        changing the color of the boxes or perhaps giving it an dark outline to highlight the boxes.`],
+        changing the color of the boxes or perhaps giving it an dark outline to highlight the boxes.`,
+      ],
     ],
   },
   {
@@ -164,24 +212,68 @@ const WORK = [
     r: "Graphic design, UX/UI",
     c: ["#34791B", "#1A1A1A", "#EDEDED"],
     k: 5,
-    video: "projects/DMUY1123_fa25_Yi_Li_rps.mov_",
+    video: "projects/RockPaperScissors/DMUY1123_fa25_Yi_Li_rps.mov_",
     big: true,
     s: [
-      ["Overview", `A design for a conceptual rock paper scissors game app. This is a prototype, a test version of an app. 
-        Players should be able to use it easily with clicks, swipes, shakes, or taps without explicit written instructions. `],
-      ["Tools", `I used a pixel art software called Pixquare to create the rock, paper, scissor assets as well as the red and blue background.
+      [
+        "Overview",
+        `A design for a conceptual rock paper scissors game app. This is a prototype, a test version of an app. 
+        Players should be able to use it easily with clicks, swipes, shakes, or taps without explicit written instructions. `,
+      ],
+      [
+        "Tools",
+        `I used a pixel art software called Pixquare to create the rock, paper, scissor assets as well as the red and blue background.
         For the wireframing and flowchart, I used Figma and importing my assets from Pixquare. Lastly I used Adobe After Effects for post production work
-        for the app demo video.`],
-      ["Process", `I started by mapping the whole game with a simple flowchart: Welcome, Pair with Partner, then either a successful pairing or a pairing error that loops back to try again. 
+        for the app demo video.`,
+      ],
+      [
+        "Process",
+        `I started by mapping the whole game with a simple flowchart: Welcome, Pair with Partner, then either a successful pairing or a pairing error that loops back to try again. 
         From there each player chooses rock, paper or scissors, waits for the opponent, and sees the result. Keeping the flow this short meant a round could start in a few taps. 
         I then designed each step as a mobile screen: an home screen with a Play button, a QR-code scan screen for finding an opponent, a "Scan Failed" screen with a 
         Try again button, a versus screen once players are paired, a profile with stats, and the choose screen. For the results I designed all nine outcomes 
         (win, lose and tie, each with rock, paper and scissors), so every combination gets its own screen. The look is built around the idea of two 
         players facing off: the screen splits diagonally into red for the opponent and blue for you, with a pixel font and a grainy texture to give 
-        it a retro arcade feel. The same split carries through every screen so players always know which side is theirs.`],
-      ["Outcome", `The result is a complete, playable prototype of a two-player rock paper scissors game, with pairing, choosing, waiting and results all connected. 
-        The video above shows the prototype in use.`],
-    ]
+        it a retro arcade feel. The same split carries through every screen so players always know which side is theirs.`,
+      ],
+      [
+        "Outcome",
+        `The result is a complete, playable prototype of a two-player rock paper scissors game, with pairing, choosing, waiting and results all connected. 
+        The video above shows the prototype in use. (Win conditions are random to simulate opponent's decision but it may not be demonstrated properly in the video, sorry!)`,
+      ],
+    ],
+  },
+  {
+    t: "Playing Cards",
+    d: "Graphic Design",
+    y: "2025",
+    r: "Graphic Design",
+    c: ["#34791B", "#1A1A1A", "#EDEDED"],
+    k: 6,
+    big: true,
+    s: [
+      [
+        "Overview",
+        `A set of custom made playing cards designed with a focus on applying principles of contrast and hierarchy to clearly distinguish
+        and define each face card. Instead of numbers, visuals will be made up of geometric shapes.`,
+      ],
+      [
+        "Tools",
+        `I used Adobe Illustrator for the entire design of the project and later I printed the designs out on paper and used corner rounders to 
+        give the cards a rounded edge on the corners`,
+      ],
+      [
+        "Process",
+        `I started off with some rough sketches of shapes I want to use for the number cards. I was already given 3 shapes to start and only needed to come up
+        with one extra one on my own. I don't have any documentation of my sketches other than the final shape I went with, which can be seen in the 3rd to 5th images.
+        Once I got my shapes, I went for the traditional poker card layout. In my head, I didn't think number cards needed an extravagant look to them, afterall their purpose is
+        to display what the number value of the card is. `,
+      ],
+      [
+        "Outcome",
+        `A set of playing cards ready to be used for entertainment purposes`,
+      ],
+    ],
   },
 ];
 
@@ -189,9 +281,18 @@ const WORK = [
 const sections = (w) =>
   w.s || [
     ["Overview", w.p],
-    ["The challenge", "Describe the brief here: who it was for and what needed to change."],
-    ["Process", "Walk through research, sketches, iterations and the key decisions."],
-    ["Outcome", "Share the results, what you learned, and where the work lives now."],
+    [
+      "The challenge",
+      "Describe the brief here: who it was for and what needed to change.",
+    ],
+    [
+      "Process",
+      "Walk through research, sketches, iterations and the key decisions.",
+    ],
+    [
+      "Outcome",
+      "Share the results, what you learned, and where the work lives now.",
+    ],
   ];
 
 /* Resume page: the PDF (download button + preview). Optionally add assets/resume.png as the preview picture. */
@@ -248,7 +349,9 @@ const SLOTS = [
 
 /* Tries each candidate URL in turn and records the first one that loads */
 function loadAsset(name) {
-  const candidates = FILES[name] ? [FILES[name]] : EXTENSIONS.map((ext) => `assets/${name}.${ext}`);
+  const candidates = FILES[name]
+    ? [FILES[name]]
+    : EXTENSIONS.map((ext) => `assets/${name}.${ext}`);
   return new Promise((resolve) => {
     const tryNext = () => {
       const url = candidates.shift();
@@ -276,12 +379,17 @@ function art(slot, cls = "", style = "") {
     return `<img class="${cls} art${bob}" style="${style}" src="${assets[slot]}" alt="" aria-hidden="true">`;
   }
   if (FALLBACK.art === "coded") return CODED[slot]?.(cls, style) ?? "";
-  return placeholder((FILES[slot] || `${slot}.png`).split("/").pop(), cls, style);
+  return placeholder(
+    (FILES[slot] || `${slot}.png`).split("/").pop(),
+    cls,
+    style,
+  );
 }
 
 const cover = (work) => {
   const slot = `work-${slug(work)}`;
-  if (assets[slot]) return `<img class="cover" src="${assets[slot]}" alt="${work.t}">`;
+  if (assets[slot])
+    return `<img class="cover" src="${assets[slot]}" alt="${work.t}">`;
   if (FALLBACK.projects === "coded") return codedCover(work.c, work.k);
   return placeholder(`${slot}.jpg`, "ph-fill");
 };
@@ -321,7 +429,10 @@ function codedLavender(cls, style) {
     ${buds}<ellipse cx="30" cy="20" rx="4.5" ry="10" fill="#0A715C"/></svg>`;
 }
 
-const codedTulip = (cls, style) => `<svg class="${cls}" ${watercolor(style)} viewBox="0 0 70 200" aria-hidden="true">
+const codedTulip = (
+  cls,
+  style,
+) => `<svg class="${cls}" ${watercolor(style)} viewBox="0 0 70 200" aria-hidden="true">
   <path d="M35 200C34 150 36 110 35 70" stroke="#34791B" stroke-width="3" fill="none"/>
   <path d="M35 200C8 170 4 120 12 90C30 110 38 150 35 200Z" fill="#229B36" opacity=".85"/>
   <path d="M35 200C62 180 68 140 60 112C44 128 34 160 35 200Z" fill="#34791B" opacity=".85"/>
@@ -337,7 +448,11 @@ function codedButterfly(cls, style) {
 }
 
 /* Stand-ins by slot name (only these three exist; other slots fall back to nothing) */
-const CODED = { tulip: codedTulip, lavender: codedLavender, butterfly: codedButterfly };
+const CODED = {
+  tulip: codedTulip,
+  lavender: codedLavender,
+  butterfly: codedButterfly,
+};
 
 /* Title tiles: [letter, tile colour, text colour, tilt in degrees, torn-edge shape 0-2] */
 const TITLE_TILES = [
@@ -353,11 +468,13 @@ const TITLE_TILES = [
 ];
 
 function titleHTML() {
-  if (assets.title) return `<span class="title-img"><img src="${assets.title}" alt="PortfoLIo"></span>`;
+  if (assets.title)
+    return `<span class="title-img"><img src="${assets.title}" alt="PortfoLIo"></span>`;
 
   return TITLE_TILES.map(([char, bg, fg, tilt, edge], i) => {
     const slot = `letter-${i + 1}`;
-    if (assets[slot]) return `<img class="title-letter" src="${assets[slot]}" alt="" aria-hidden="true">`;
+    if (assets[slot])
+      return `<img class="title-letter" src="${assets[slot]}" alt="" aria-hidden="true">`;
     if (FALLBACK.letters !== "coded") {
       return `<span class="ph-slot ph-letter" aria-hidden="true"><i>${char}</i><b>${slot}</b></span>`;
     }
@@ -453,9 +570,16 @@ const sprigHTML = () =>
 
 let activeFilter = "All";
 
+const thumb = (w) =>
+  w.video
+    ? `<video class="cover" src="${encodeURI(w.preview || w.video)}" preload="metadata" aria-label="${w.t}"></video>`
+    : cover(w);
+
 function workPage() {
   const categories = ["All", ...new Set(WORK.map((w) => w.d))];
-  const projects = WORK.filter((w) => activeFilter === "All" || w.d === activeFilter);
+  const projects = WORK.filter(
+    (w) => activeFilter === "All" || w.d === activeFilter,
+  );
   const featured = projects.filter((w) => w.big);
   const more = projects.filter((w) => !w.big);
 
@@ -474,7 +598,8 @@ function workPage() {
     <div class="tabs" role="group" aria-label="Filter by discipline">
       ${categories
         .map(
-          (c) => `<button type="button" class="tab" data-category="${c}" aria-pressed="${activeFilter === c}">${c}</button>`,
+          (c) =>
+            `<button type="button" class="tab" data-category="${c}" aria-pressed="${activeFilter === c}">${c}</button>`,
         )
         .join("")}
     </div>
@@ -485,7 +610,7 @@ function workPage() {
       ${featured
         .map(
           (w) => `<a class="hcard" href="#/work/${slug(w)}">
-            <div class="tile">${cover(w)}</div>
+            <div class="tile">${thumb(w)}</div>
             <h3>${w.t}</h3>
             <p class="meta">${w.d}, ${w.y}</p>
           </a>`,
@@ -506,7 +631,7 @@ function workPage() {
         : ""
     }`;
 
-   const track = $(".track");
+  const track = $(".track");
   if (track) {
     const progress = $(".bar i");
     const [prev, next] = $$(".arrow");
@@ -551,14 +676,16 @@ function enableWheelScroll(track) {
       return;
     }
     // browsers round scrollLeft to whole pixels, so always move at least 1px
-    track.scrollLeft += Math.sign(distance) * Math.max(1, Math.abs(distance) * 0.18);
+    track.scrollLeft +=
+      Math.sign(distance) * Math.max(1, Math.abs(distance) * 0.18);
     frame = requestAnimationFrame(glide);
   };
 
   track.addEventListener(
     "wheel",
     (event) => {
-      if (event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY)) return; // zoom, or native sideways scroll
+      if (event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY))
+        return; // zoom, or native sideways scroll
       const delta = event.deltaMode === 1 ? event.deltaY * 40 : event.deltaY; // Firefox reports lines
       const atStart = track.scrollLeft <= 0 && delta < 0;
       const atEnd = track.scrollLeft >= maxScroll() - 1 && delta > 0;
@@ -580,18 +707,35 @@ function enableWheelScroll(track) {
 
 /* Extra project images, or three stand-ins when you haven't added any */
 function gallery(work) {
-  const photos = [1, 2, 3, 4, 5, 6].map((n) => assets[`work-${slug(work)}-${n}`]).filter(Boolean);
+  const photos = [1, 2, 3, 4, 5, 6]
+    .map((n) => assets[`work-${slug(work)}-${n}`])
+    .filter(Boolean);
   if (photos.length) {
-    return photos.map((src) => `<div class="tile"><img class="cover" src="${src}" alt=""></div>`).join("");
+    return photos
+      .map(
+        (src) =>
+          `<div class="tile"><img class="cover" src="${src}" alt=""></div>`,
+      )
+      .join("");
   }
   if (FALLBACK.projects !== "coded") {
     return [1, 2, 3]
-      .map((n) => `<div class="tile">${placeholder(`work-${slug(work)}-${n}.jpg`, "ph-fill")}</div>`)
+      .map(
+        (n) =>
+          `<div class="tile">${placeholder(`work-${slug(work)}-${n}.jpg`, "ph-fill")}</div>`,
+      )
       .join("");
   }
   const [a, b, d] = work.c;
-  return [[b, a, d], [d, b, a], [a, d, b]]
-    .map((colors, i) => `<div class="tile">${codedCover(colors, work.k + i + 1)}</div>`)
+  return [
+    [b, a, d],
+    [d, b, a],
+    [a, d, b],
+  ]
+    .map(
+      (colors, i) =>
+        `<div class="tile">${codedCover(colors, work.k + i + 1)}</div>`,
+    )
     .join("");
 }
 
@@ -653,16 +797,18 @@ function projectPage(projectSlug) {
         <div><span>Year</span>${work.y}</div>
         <div><span>Role</span>${work.r}</div>
       </div>
-      <div class="tile">${cover(work)}</div>
-      ${videoHTML(work)}
+      ${work.video ? videoHTML(work) : `<div class="tile">${cover(work)}</div>`}
       ${sections(work)
-        .map(([heading, text]) => `<div class="rs"><h2>${heading}</h2><p>${text}</p></div>`)
+        .map(
+          ([heading, text]) =>
+            `<div class="rs"><h2>${heading}</h2><p>${text}</p></div>`,
+        )
         .join("")}
       <div class="pgal">${gallery(work)}</div>
       <a class="next" href="#/work/${slug(upNext)}">Next project: ${upNext.t}</a>
     </div>`;
 
-    enableLightbox();
+  enableLightbox();
 }
 
 /* ---------- resume ---------- */
@@ -670,7 +816,7 @@ function projectPage(projectSlug) {
 function resumePage() {
   const preview = assets.resume
     ? `<img src="${assets.resume}" alt="Preview of my resume">`
-      : `<object data="${RESUME_PDF}#toolbar=0&navpanes=0&view=FitH" type="application/pdf">
+    : `<object data="${RESUME_PDF}#toolbar=0&navpanes=0&view=FitH" type="application/pdf">
          <p class="rfallback">Preview not available here. <a href="${RESUME_PDF}" target="_blank" rel="noopener">Open the PDF</a></p>
        </object>`;
 
@@ -717,7 +863,9 @@ function contactPage() {
     const name = $("#name").value;
     const email = $("#email").value;
     const message = $("#message").value;
-    const subject = encodeURIComponent(`Hello from ${name || "your portfolio"}`);
+    const subject = encodeURIComponent(
+      `Hello from ${name || "your portfolio"}`,
+    );
     const body = encodeURIComponent(`${message}\n\n${name} (${email})`);
     location.href = `mailto:${ME.email}?subject=${subject}&body=${body}`;
   };
@@ -734,7 +882,7 @@ function startBubbles() {
   const pills = $$(".pill", field);
   const note = $(".note");
   let selected = -1;
-  const cruise = reduceMotion ? 0.15 : 0.4; 
+  const cruise = reduceMotion ? 0.15 : 0.4;
 
   /* One physics body per pill, spread out with golden-ratio offsets */
   const bodies = pills.map((_, i) => ({
@@ -766,7 +914,12 @@ function startBubbles() {
     };
 
     pill.addEventListener("pointerdown", (event) => {
-      Object.assign(body, { dragging: true, travelled: 0, lastX: event.clientX, lastY: event.clientY });
+      Object.assign(body, {
+        dragging: true,
+        travelled: 0,
+        lastX: event.clientX,
+        lastY: event.clientY,
+      });
       pill.setPointerCapture(event.pointerId);
     });
     pill.addEventListener("pointermove", (event) => {
@@ -796,10 +949,14 @@ function startBubbles() {
       for (let b = a + 1; b < pills.length; b++) {
         const A = bodies[a];
         const B = bodies[b];
-        const dx = A.x + pills[a].offsetWidth / 2 - (B.x + pills[b].offsetWidth / 2);
-        const dy = A.y + pills[a].offsetHeight / 2 - (B.y + pills[b].offsetHeight / 2);
-        const overlapX = (pills[a].offsetWidth + pills[b].offsetWidth) / 2 - Math.abs(dx);
-        const overlapY = (pills[a].offsetHeight + pills[b].offsetHeight) / 2 - Math.abs(dy);
+        const dx =
+          A.x + pills[a].offsetWidth / 2 - (B.x + pills[b].offsetWidth / 2);
+        const dy =
+          A.y + pills[a].offsetHeight / 2 - (B.y + pills[b].offsetHeight / 2);
+        const overlapX =
+          (pills[a].offsetWidth + pills[b].offsetWidth) / 2 - Math.abs(dx);
+        const overlapY =
+          (pills[a].offsetHeight + pills[b].offsetHeight) / 2 - Math.abs(dy);
         if (overlapX <= 0 || overlapY <= 0) continue;
 
         /* push along whichever direction needs the smaller shove */
@@ -859,8 +1016,10 @@ function startBubbles() {
   /* wait one frame so the page has its real size before the pills are spread out */
   requestAnimationFrame(() => {
     bodies.forEach((body, i) => {
-      body.x = ((i * 0.618 + 0.05) % 1) * Math.max(100, field.clientWidth - 160);
-      body.y = ((i * 0.382 + 0.12) % 1) * Math.max(100, field.clientHeight - 60);
+      body.x =
+        ((i * 0.618 + 0.05) % 1) * Math.max(100, field.clientWidth - 160);
+      body.y =
+        ((i * 0.382 + 0.12) % 1) * Math.max(100, field.clientHeight - 60);
     });
     tick();
   });
@@ -873,7 +1032,9 @@ function startBubbles() {
 function route() {
   cancelAnimationFrame(bubbleFrame);
 
-  const [section, projectSlug] = (location.hash.replace(/^#\//, "") || "home").split("/");
+  const [section, projectSlug] = (
+    location.hash.replace(/^#\//, "") || "home"
+  ).split("/");
   if (section === "work" && projectSlug) projectPage(projectSlug);
   else if (section === "work") workPage();
   else if (section === "resume") resumePage();
@@ -900,7 +1061,8 @@ const isDark = () =>
   document.documentElement.dataset.theme
     ? document.documentElement.dataset.theme === "dark"
     : matchMedia("(prefers-color-scheme: dark)").matches;
-const updateThemeLabel = () => (themeButton.textContent = isDark() ? "Light mode" : "Dark mode");
+const updateThemeLabel = () =>
+  (themeButton.textContent = isDark() ? "Light mode" : "Dark mode");
 
 themeButton.onclick = () => {
   document.documentElement.dataset.theme = isDark() ? "light" : "dark";
