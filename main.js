@@ -52,32 +52,14 @@ const FILES = {
   "work-rock-paper-scissors-3":
     "projects/RockPaperScissors/DMUY1123_fa25_Yi_Li_wireframe w_ arrows.png",
   "work-playing-cards": "projects/PlayingCards/Playing_Cards_Printed.jpg",
-  "work-playing-cards-2":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_draft.pdf",
-  "work-playing-cards-3":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_draft_002.pdf",
-  "work-playing-cards-4":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_final.pdf",
-  "work-playing-cards-5":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_final_002.pdf",
-  "work-playing-cards-6":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_001.pdf",
-  "work-playing-cards-7":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_002.pdf",
-  "work-playing-cards-8":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_003.pdf",
-  "work-playing-cards-9":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_004.pdf",
-  "work-playing-cards-10":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_005.pdf",
-  "work-playing-cards-11":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_006.pdf",
-  "work-playing-cards-12":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_007.pdf",
-  "work-playing-cards-13":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_008.pdf",
-  "work-playing-cards-14":
-    "projects/PlayingCards/DMUY1123_sp24_YiLi_numbercards_006.pdf",
+  "work-ubiq": "projects/Ubiq/ubiqapp_logo.png",
+  "work-sharks-minnows": "projects/SharksAndMinnows/sharksminnows_icon_01.png",
+  "work-sharks-minnows-1":
+    "projects/SharksAndMinnows/sharksminnows_thumbnail_01.png",
+  "work-sharks-minnows-2":
+    "projects/SharksAndMinnows/sharksminnows_thumbnail_02.png",
+  "work-sharks-minnows-3":
+    "projects/SharksAndMinnows/sharksminnows_icon_02.png",
 
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
@@ -134,7 +116,7 @@ const WORK = [
     r: "Graphic design",
     c: ["#0A7136", "#EDEDED", "#229B36"],
     k: 0,
-    p: "An adoption advertisement design. Add the goal, audience and process here.",
+    p: "An adoption advertisement design for British Shorthair cats.",
   },
   {
     t: "Maine Coon Adopt Ad",
@@ -143,7 +125,7 @@ const WORK = [
     r: "Graphic design",
     c: ["#116006", "#EDEDED", "#229B36"],
     k: 1,
-    p: "An adoption advertisement design. Add the goal, audience and process here.",
+    p: "An adoption advertisement design for Maine Coon cats.",
   },
   {
     t: "Ragdoll Adopt Ad",
@@ -152,7 +134,7 @@ const WORK = [
     r: "Graphic design",
     c: ["#0A715C", "#EDEDED", "#1A1A1A"],
     k: 2,
-    p: "An adoption advertisement design. Add the goal, audience and process here.",
+    p: "An adoption advertisement design for Ragdoll cats.",
   },
   {
     t: "Isometric Room",
@@ -212,7 +194,7 @@ const WORK = [
     r: "Graphic design, UX/UI",
     c: ["#34791B", "#1A1A1A", "#EDEDED"],
     k: 5,
-    video: "projects/RockPaperScissors/DMUY1123_fa25_Yi_Li_rps.mov_",
+    video: "projects/RockPaperScissors/DMUY1123 fa25 Yi Li rps.mp4",
     big: true,
     s: [
       [
@@ -272,6 +254,99 @@ const WORK = [
       [
         "Outcome",
         `A set of playing cards ready to be used for entertainment purposes`,
+      ],
+    ],
+    pdf: [
+      "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_draft.pdf",
+      "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_draft_002.pdf",
+      "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_final.pdf",
+      "projects/PlayingCards/DMUY1123_sp24_YiLi_facecards_final_002.pdf",
+    ],
+    gallery: false,
+  },
+  {
+    t: "Ubiq",
+    d: "UX/UI Design, Marketing",
+    y: 2025,
+    r: "UX/UI Design, Marketing",
+    c: ["#0A715C", "#EDEDED", "#229B36"],
+    k: 7,
+    big: true,
+    s: [
+      [
+        "Overview",
+        `Ubiq is a spatial media app that turns social media into something more interactive. It uses 3D satellite mapping so users can post videos and 
+        pictures of activities they've done and pin them to the exact place on the map. Users can also message friends they've added to ask about the 
+        content of their posts. As a Product Design Intern, I worked with two other designers on testing and creating new UI designs for the app. 
+        We each worked on the same set of screens: the home page with the 3D satellite map, the user profile, the story view and the contact page. 
+        The main problem we were asked to solve was accessibility and user-friendliness.`,
+      ],
+      [
+        "Tools",
+        `I used Miro for the UX/UI design work and Adobe After Effects for the promotional videos.`,
+      ],
+      [
+        "Process",
+        `We started by looking at how existing social media apps lay out their interfaces and used them as inspiration for a new Ubiq layout. Each of us came up with several designs, and in the end we combined the strongest 
+        features from the different versions into one final design. One of the ideas we focused on was how people interact on Instagram, especially story reactions. Since Ubiq is 
+        all about sharing fun moments, we thought a similar feature would feel natural and make the app more engaging. Alongside the design work, we made TikTok-style marketing videos for the app. 
+        We used posts we had uploaded to Ubiq ourselves, screen-recorded ourselves opening those posts, and added voiceovers in post-production. 
+        To make them feel current, we followed trends that were popular at the time and used meme templates.`,
+      ],
+      [
+        "Outcome",
+        `We delivered slideshows to the CEO and other top executives of the company covering our final UX/UI designs, the design process behind them, and our marketing videos 
+        along with our thinking for each one. They loved our ideas and gave us positive feedback on our work. One of our marketing videos was 
+        approved and got posted on Ubiq's Tiktok account. Though it did not perform as well as we hoped, it was still a great experience to see our work go live and be seen by the public.`,
+      ],
+    ],
+    pdf: [
+      "projects/Ubiq/Week 2- Profile Upgrade.pdf",
+      "projects/Ubiq/week 3 -- Spatial Story & New feature .pdf",
+      "projects/Ubiq/week 4 - team 2.pdf",
+      "projects/Ubiq/Week 5 Tiktok - Team 2.pdf",
+    ],
+    gallery: false,
+  },
+  {
+    t: "Sharks & Minnows",
+    d: "Game Design",
+    y: "2026",
+    r: "Game design, 3D modeling, UI design",
+    c: ["#0A715C", "#EDEDED", "#229B36"],
+    k: 8,
+    big: true,
+    s: [
+      [
+        "Overview",
+        `Sharks & Minnows is a Roblox game based on the classic schoolyard game, where one player is the shark and everyone else tries to cross the 
+        water without getting tagged. I took the playground version and turned it into an online game with its own lobby, look and menus.
+        Each round begins with one shark and the rest of the players as minnows. The shark tries to tag the minnows, and the last minnow standing becomes the shark for the next round.
+        Whenever a minnow is tagged, they turn into a shark too. I wanted to build this game because over the summer I played this game with a group of elementary kids at a summer camp I
+        worked at and I thought this would be a fun game for young kids nowadays to play online with their friends and maybe some older players would enjoy some nostalgia. 
+        I also wanted to make a game that is easy to understand and play, but still fun and engaging for the players.`,
+      ],
+      [
+        "Tools",
+        `I built the game in Roblox Studio and made the 3D models in Blender as low-poly stylized assets. I used Figma for the game interface design
+        and general layout for review.`,
+      ],
+      [
+        "Process",
+        `I started with the lobby area since it's the first thing players see and built it as a real base environment. I chose a low-poly stylized look for every asset so the whole game feels consistent and runs well. 
+        I originally turned the lobby into a forest environment but realized that would have little correlation with sharks and fishes. So I turned it into a beach and coastal setting, but keeping the mountains, and did it in phases 
+        rather than all at once. I made art rules to keep the models coherent: hard objects like wood, stone and metal stay blocky and faceted, while soft objects like plants are smoothed. 
+        For the interface, I designed a shop, a daily prize, a settings menu, an inventory menu, and a help menu. The name went through a few options, but I settled on Sharks & Minnows over Fishy Fishy because it's instantly recognizable as the game people already know
+        even though I personally grew up with Fishy Fishy. I worked with Claude, an AI assistant, throughout the project: it helped build parts of the environment, models, scripts and menus in Roblox Studio and Blender, and gave design feedback and testing help. 
+        I set the direction and made the creative decisions: the beach theme, the low-poly art rules, which menus to include, and the name. I reviewed and revised what it produced.`,
+      ],
+      [
+        "Outcome",
+        ` It's close to release and fully playable, with a lobby, shop, daily prize, settings, inventory and help menus. Some things left to do before official launch is:
+        adding more visual effects and polishing gameplay movements and more playtesting. One thing I learned from this project is that I should've have spent more time on the UI design and layout
+        because I wanted to go for something that players are familiar with but I also wanted to keep things simple and not over exaggerate the designs. Also a huge challenge was appealing to a mix audience of kids, teenagers and young adults; 
+        the player base on roblox is so diverse now that I have to take into account the different age groups and their preferences. I also learned that I should have spent more time on the game mechanics and how the game is played instead of 
+        how it looked visually, though that is also an important part. I felt like I spent more time on the visual aspect of the game and not enough time on the game mechanics and how the game is played.`,
       ],
     ],
   },
@@ -572,7 +647,7 @@ let activeFilter = "All";
 
 const thumb = (w) =>
   w.video
-    ? `<video class="cover" src="${encodeURI(w.preview || w.video)}" preload="metadata" aria-label="${w.t}"></video>`
+    ? `<video class="cover" src="${encodeURI(w.preview || w.video)}#t=0.1" muted playsinline preload="metadata" aria-label="${w.t}"></video>`
     : cover(w);
 
 function workPage() {
@@ -707,6 +782,7 @@ function enableWheelScroll(track) {
 
 /* Extra project images, or three stand-ins when you haven't added any */
 function gallery(work) {
+  if (work.gallery === false) return "";
   const photos = [1, 2, 3, 4, 5, 6]
     .map((n) => assets[`work-${slug(work)}-${n}`])
     .filter(Boolean);
@@ -778,6 +854,19 @@ const videoHTML = (work) =>
     ? `<div class="vid"><video src="${encodeURI(work.video)}" controls playsinline preload="metadata"></video></div>`
     : "";
 
+const pdfHTML = (work) =>
+  []
+    .concat(work.pdf || [])
+    .map(
+      (file) => `<div class="pdf">
+         <object data="${encodeURI(file)}#view=FitH" type="application/pdf">
+           <p class="rfallback">Preview not available in this browser.</p>
+         </object>
+         <a class="btn" href="${encodeURI(file)}" target="_blank" rel="noopener">Open full PDF</a>
+       </div>`,
+    )
+    .join("");
+
 function projectPage(projectSlug) {
   const index = WORK.findIndex((w) => slug(w) === projectSlug);
   if (index < 0) {
@@ -804,6 +893,7 @@ function projectPage(projectSlug) {
             `<div class="rs"><h2>${heading}</h2><p>${text}</p></div>`,
         )
         .join("")}
+      ${pdfHTML(work)}
       <div class="pgal">${gallery(work)}</div>
       <a class="next" href="#/work/${slug(upNext)}">Next project: ${upNext.t}</a>
     </div>`;
