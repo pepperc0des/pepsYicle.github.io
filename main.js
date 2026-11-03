@@ -108,6 +108,36 @@ const HOBBIES = [
 ];
 const DEFAULT_NOTE = "";
 
+const adoptSections = (breed) => [
+  [
+    "Overview",
+    `An adoption advertisement design for ${breed} cats. It is one of a series of three adoption posters, one each for a Ragdoll, a Maine Coon and a British Shorthair, designed to share the same look and process.`,
+  ],
+  [
+    "Tools",
+    `I used only Canva for the design and layout, and Pinterest for the reference photos of cats. These are not my own photos.`,
+  ],
+  [
+    "Process",
+    `I was waiting at the movie theater, looking at some movie posters, when I suddenly had the idea to make an ad poster for cats.
+    I'm a big fan of cats myself and hope to have one of my own someday. Knowing how expensive cats are to purchase, I thought it would be perfect to
+    create an ad for cats that are up for adoption. I used Pinterest to look for appealing cat pictures and imported them into Canva.
+    I started with the message: "ADOPT ME" had to be the first thing anyone reads, so it's the largest text in a bold color, with the contact details
+    kept small underneath. For the look, I chose a warm, soft color palette with one cool accent color for the breed name and traits, so the cat's
+    photos and name stand out against the background. I used two photos on each poster for different jobs: a framed portrait to show the cat's face, and a
+    looser cutout to show its personality. Finally, I added six traits for the breed, each with a paw icon, so a viewer can scan the personality quickly
+    instead of reading a paragraph. Paw prints repeat through the layout to tie the sections together. Because the three posters share the same structure,
+    I could swap the photos, colors and traits for each breed and have them still read as a set.`,
+  ],
+  [
+    "Outcome",
+    `These ads were never published to the public or on any social media platform. They were experimental and made for practice.
+    I realized I should have made them more personal to each cat, giving them a voice rather than just describing them by breed. Another thing I would change
+    is using photos of cats that are actually up for adoption at local adoption centers, which would make the ads more meaningful and more effective.
+    I would also like to make a series of these ads for more cat breeds, and maybe even different animals.`,
+  ],
+];
+
 const WORK = [
   {
     t: "British Shorthair Adopt Ad",
@@ -116,8 +146,8 @@ const WORK = [
     r: "Graphic design",
     c: ["#0A7136", "#EDEDED", "#229B36"],
     k: 0,
-    p: "An adoption advertisement design for British Shorthair cats.",
     gallery: false,
+    s: adoptSections("British Shorthair"),
   },
   {
     t: "Maine Coon Adopt Ad",
@@ -126,8 +156,8 @@ const WORK = [
     r: "Graphic design",
     c: ["#116006", "#EDEDED", "#229B36"],
     k: 1,
-    p: "An adoption advertisement design for Maine Coon cats.",
     gallery: false,
+    s: adoptSections("Maine Coon"),
   },
   {
     t: "Ragdoll Adopt Ad",
@@ -136,8 +166,8 @@ const WORK = [
     r: "Graphic design",
     c: ["#0A715C", "#EDEDED", "#1A1A1A"],
     k: 2,
-    p: "An adoption advertisement design for Ragdoll cats.",
     gallery: false,
+    s: adoptSections("Ragdoll"),
   },
   {
     t: "Isometric Room",
