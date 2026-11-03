@@ -177,6 +177,29 @@ const WORK = [
     c: ["#34791B", "#1A1A1A", "#EDEDED"],
     k: 3,
     p: "An isometric room illustration. Add the tools, concept and process here.",
+    gallery: false,
+    s: [
+      [
+        "Overview",
+        `A 3D isometric bedroom, modeled as a cutaway cube so the whole room can be seen at once. The goal was to build a 
+        small, cozy scene that feels lived in, using simple shapes, a limited color palette and moody lighting.`,
+      ],
+      ["Tools", `I modeled, lit and rendered the whole scene in Blender.`],
+      [
+        "Process",
+        `I started with the room shell: two walls and a floor set at an isometric angle, so everything inside is visible from one fixed viewpoint. 
+        I then blocked out the furniture with basic shapes before adding detail: a bed with a pillowed headboard, a nightstand with a lamp, a wardrobe, and 
+        a desk with a monitor, keyboard, mouse and a small stack of books. A round rug and two empty picture frames on the wall fill the space and add 
+        personality. For the colors, I kept the room warm and muted, with dark wood and floor tiles, a terracotta blanket and tan pillows, so the bed 
+        becomes the focal point. The lighting does most of the storytelling: a warm lamp and ceiling glow light the inside, while a cooler light comes 
+        through the window, which suggests the time of day.`,
+      ],
+      [
+        "Outcome",
+        `The finished render is a cozy little room that is visible from one angle. One thing I would do differently is fill the empty picture frames with artwork, and 
+        add more small details like books, plants or clothes to make the room feel more lived in. Through this process, I learned how to make soft materials, like blankets, pillows and curtains.`,
+      ],
+    ],
   },
 
   {
