@@ -117,6 +117,7 @@ const WORK = [
     c: ["#0A7136", "#EDEDED", "#229B36"],
     k: 0,
     p: "An adoption advertisement design for British Shorthair cats.",
+    gallery: false,
   },
   {
     t: "Maine Coon Adopt Ad",
@@ -126,6 +127,7 @@ const WORK = [
     c: ["#116006", "#EDEDED", "#229B36"],
     k: 1,
     p: "An adoption advertisement design for Maine Coon cats.",
+    gallery: false,
   },
   {
     t: "Ragdoll Adopt Ad",
@@ -135,6 +137,7 @@ const WORK = [
     c: ["#0A715C", "#EDEDED", "#1A1A1A"],
     k: 2,
     p: "An adoption advertisement design for Ragdoll cats.",
+    gallery: false,
   },
   {
     t: "Isometric Room",
