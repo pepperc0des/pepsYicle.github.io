@@ -92,7 +92,7 @@ const ME = {
   statement: "Strategic visuals and stories that stick.",
   email: "yilicareer06@gmail.com",
   links: [
-    ["Instagram", "https://instagram.com/"],
+    // ["Instagram", "https://instagram.com/"],
     ["LinkedIn", "https://www.linkedin.com/in/yili536"],
   ],
 };
@@ -943,7 +943,6 @@ function contactPage() {
         <button type="button" class="btn" id="send">Send message</button>
       </div>
       <div class="links">
-        <a href="mailto:${ME.email}">${ME.email}</a>
         ${ME.links.map(([label, url]) => `<a href="${url}" target="_blank" rel="noopener">${label}</a>`).join("")}
       </div>
     </div>`;
