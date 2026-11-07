@@ -806,6 +806,30 @@ footer button {
   max-height: 80vh;
 }
 
+/* vertical reels, side by side (stack on narrow screens) */
+.reels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+.reel {
+  margin: 0;
+}
+.reel video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 80vh;
+  border-radius: 16px;
+  background: #000;
+}
+.reel figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 /* ---------- project page ---------- */
 
 .back {

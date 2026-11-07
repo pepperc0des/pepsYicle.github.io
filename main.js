@@ -60,6 +60,17 @@ const FILES = {
     "projects/SharksAndMinnows/sharksminnows_thumbnail_02.png",
   "work-sharks-minnows-3":
     "projects/SharksAndMinnows/sharksminnows_icon_02.png",
+  "work-noz": "projects/Noz/noz_storefront.jpg",
+  "work-noz-1": "projects/Noz/noz_about_us.jpg",
+  "work-noz-2": "projects/Noz/noz_about_product.jpg",
+  "work-noz-3": "projects/Noz/noz_abandoned_cart_email.jpg",
+  "work-nyu-idm-social": "projects/NYU_IDM_Social/idm_carousel_01.jpg",
+  "work-nyu-idm-social-1": "projects/NYU_IDM_Social/idm_carousel_02.jpg",
+  "work-nyu-idm-social-2": "projects/NYU_IDM_Social/idm_carousel_04.jpg",
+  "work-nyu-idm-social-3": "projects/NYU_IDM_Social/idm_carousel_07.jpg",
+  "work-nyu-idm-social-4": "projects/NYU_IDM_Social/idm_carousel_08.jpg",
+  "work-nyu-idm-social-5": "projects/NYU_IDM_Social/idm_carousel_09.jpg",
+  "work-nyu-idm-social-6": "projects/NYU_IDM_Social/idm_carousel_10.jpg",
 
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
@@ -406,6 +417,100 @@ const WORK = [
       ],
     ],
   },
+  {
+    t: "Nöz",
+    d: "Marketing",
+    y: 2026,
+    r: "Digital marketing, eCommerce, Brand strategy",
+    c: ["#335530", "#FFFEF4", "#EEB33A"],
+    k: 9,
+    big: true,
+    s: [
+      [
+        "Overview",
+        `Nöz is a reef-safe, vegan and cruelty-free sunscreen stick made for your nose, sold in bright, playful colors. Starting from the brand's guidelines,
+        I built and marketed a Shopify store for Nöz aimed at one customer: Mary the Mom, an earth-conscious parent who wants products that are safe for her
+        kids and good for the planet, but who is short on time. The goal was to position the brand so it speaks directly to her, from the first thing she sees
+        on the homepage to the email she gets if she leaves something in her cart.`,
+      ],
+      [
+        "Tools",
+        `I used Shopify to build the store, the SEO settings and the marketing emails, Semrush and Google Trends for keyword research, Canva to edit
+        user-generated content, and Instagram to publish it.`,
+      ],
+      [
+        "Process",
+        `I started with research. I made an empathy map for Mary the Mom, covering what she says, thinks, does and feels, and used it to write the value proposition:
+        natural ingredients in eco-friendly packaging, so the whole family can go outside with no compromises. Next came the look of the site. I kept the background
+        light to feel warm and inviting, used green and light green for headings and accents to signal nature, and made the buttons yellow so they contrast with the
+        green and stand out as calls to action. For the hero image I picked a smiling family in a forest, wearing Nöz on their noses, with the headline
+        "Gentle for your family and the planet." For SEO, I compared keywords by search volume, difficulty and intent, chose five such as "reef safe sunscreen" and
+        "eco friendly sunscreen", and used two of them in the homepage meta title and description. To build trust and drive sales, I added vegan, eco-friendly and
+        no-animal-testing badges, a free-shipping promo code with an announcement bar and launch email, and an abandoned-checkout email. I also A/B tested two versions
+        of the homepage to compare design, copy and CTA. On the social side, I found a fan photo that matched the brand's warm, carefree style, re-imagined it in
+        Canva and published it on Instagram. I then chose micro-influencers for a UK launch, since they are more open to product-only partnerships and reach a more
+        niche audience, and wrote the outreach message.`,
+      ],
+      [
+        "Outcome",
+        `The result is a working Nöz storefront where the customer persona, visuals, copy, SEO and emails all point at the same customer. The biggest thing I learned was how
+        much easier every decision gets once the target customer is clear: the colors, the photo, the keywords and even the tone of the emails all came from knowing who Mary
+        is and what she worries about. The full final presentation and the Instagram and influencer project are below.`,
+      ],
+    ],
+    pdf: [
+      "projects/Noz/HQ-Yi_Li_Nöz_PortfolioProject_Final.pdf",
+      "projects/Noz/HQ- Yi_Li - Nöz Project 2.2_ Do it for the 'Gram.pdf",
+    ],
+  },
+  {
+    t: "NYU Social Media Coordinator",
+    d: "Marketing",
+    y: 2026,
+    r: "Camera operator, Social media content",
+    c: ["#0A715C", "#EDEDED", "#229B36"],
+    k: 10,
+    big: true,
+    s: [
+      [
+        "Overview",
+        `A semester of Instagram content for NYU's Integrated Design and Media (IDM) program, made with Daniela Cruz and Jiaqi Liu. Our audience was prospective
+        undergraduate and graduate students interested in creative technology, design and emerging media. The goals were to introduce IDM in a simple, visually
+        engaging way, show how interdisciplinary it is (AR, XR, sound, wearables, AI, creative coding and more), and make the program feel approachable and exciting
+        to students who had never heard of it.`,
+      ],
+      [
+        "Tools",
+        `We shot the content on campus, edited the reels in DaVinci Resolve, designed the carousel and text overlays in Canva, and used Instagram Insights
+        to track how each post performed.`,
+      ],
+      [
+        "Process",
+        `Our approach was "follow trends and capture the mundane." Prospective students scroll quickly, so each post had to be visually dynamic and easy to understand in
+        under a minute: mostly reels with a fast, high-energy montage style, short text overlays, and real student work and tools. We made five posts. "Find me at IDM" is
+        a carousel built on the "I saw you in a dream last night" text-message trend, where each slide shows a different corner of the IDM building, from the green wall in
+        the lobby to the motion capture studio and the 3D printers. "Fav IDM Course" and "Best IDM Experience" are street-interview reels with students. "Why IDM" shows
+        students in their own creative space, and "Sounds of IDM" is a reel about noticing the small details that make the program unique. After posting, we tracked
+        likes, comments, reach, impressions and engagement rate for every post and wrote up what worked and what could improve.`,
+      ],
+      [
+        "Outcome",
+        `Over the last 30 days of the campaign (March 30 to April 29, 2026), the account reached 11.1K people (up 33.8%) with 21.9K views (up 13.6%), and every metric
+        rose compared to the previous period, both over 7 days and over 30 days. The "Fav IDM Course" reel reached almost three times as many people as "Best IDM Experience"
+        (2,079 vs 749), which taught us that prospective students actively look for practical, course-related information. The biggest lessons were that the best content
+        balances useful information with authentic student stories, that student-focused posts feel more relatable and credible, and that clear calls to action, shorter
+        captions and stronger opening hooks are what turn views into comments and shares. The two student-interview reels and our final case study are below.`,
+      ],
+    ],
+    reels: [
+      ["Fav IDM Course", "projects/NYU_IDM_Social/idm_favorite_class.mp4"],
+      [
+        "Best IDM Experience",
+        "projects/NYU_IDM_Social/idm_interesting_experience.mp4",
+      ],
+    ],
+    pdf: ["projects/NYU_IDM_Social/idm_case_study.pdf"],
+  },
 ];
 
 /* Project page sections. Give one project its own by adding  s: [["Heading", "Text"], ...]  to it above. */
@@ -451,6 +556,8 @@ const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const slug = (work) =>
   work.t
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "") // "Nöz" -> "Noz"
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
@@ -910,6 +1017,19 @@ const videoHTML = (work) =>
     ? `<div class="vid"><video src="${encodeURI(work.video)}" controls playsinline preload="metadata"></video></div>`
     : "";
 
+/* Vertical videos (reels) side by side: reels: [["Caption", "path.mp4"], ...] */
+const reelsHTML = (work) =>
+  work.reels
+    ? `<div class="reels">${work.reels
+        .map(
+          ([label, file]) => `<figure class="reel">
+             <video src="${encodeURI(file)}#t=0.1" controls playsinline preload="metadata"></video>
+             <figcaption>${label}</figcaption>
+           </figure>`,
+        )
+        .join("")}</div>`
+    : "";
+
 const pdfHTML = (work) =>
   []
     .concat(work.pdf || [])
@@ -949,6 +1069,7 @@ function projectPage(projectSlug) {
             `<div class="rs"><h2>${heading}</h2><p>${text}</p></div>`,
         )
         .join("")}
+      ${reelsHTML(work)}
       ${pdfHTML(work)}
       <div class="pgal">${gallery(work)}</div>
       <a class="next" href="#/work/${slug(upNext)}">Next project: ${upNext.t}</a>
