@@ -60,17 +60,19 @@ const FILES = {
     "projects/SharksAndMinnows/sharksminnows_thumbnail_02.png",
   "work-sharks-minnows-3":
     "projects/SharksAndMinnows/sharksminnows_icon_02.png",
-  "work-noz": "projects/Noz/noz_storefront.jpg",
-  "work-noz-1": "projects/Noz/noz_about_us.jpg",
-  "work-noz-2": "projects/Noz/noz_about_product.jpg",
-  "work-noz-3": "projects/Noz/noz_abandoned_cart_email.jpg",
-  "work-nyu-idm-social": "projects/NYU_IDM_Social/idm_carousel_01.jpg",
-  "work-nyu-idm-social-1": "projects/NYU_IDM_Social/idm_carousel_02.jpg",
-  "work-nyu-idm-social-2": "projects/NYU_IDM_Social/idm_carousel_04.jpg",
-  "work-nyu-idm-social-3": "projects/NYU_IDM_Social/idm_carousel_07.jpg",
-  "work-nyu-idm-social-4": "projects/NYU_IDM_Social/idm_carousel_08.jpg",
-  "work-nyu-idm-social-5": "projects/NYU_IDM_Social/idm_carousel_09.jpg",
-  "work-nyu-idm-social-6": "projects/NYU_IDM_Social/idm_carousel_10.jpg",
+  "work-noz": "projects/Noz/Noz_Product_7.jpg",
+  "work-noz-1": "projects/Noz/noz_storefront.jpg",
+  "work-noz-2": "projects/Noz/noz_about_us.jpg",
+  "work-noz-3": "projects/Noz/noz_about_product.jpg",
+  "work-noz-4": "projects/Noz/noz_abandoned_cart_email.jpg",
+  "work-nyu-idm-social": "projects/NYU_IDM_Social/idm_thumbnail.jpg",
+  "work-nyu-idm-social-1": "projects/NYU_IDM_Social/idm_carousel_01.jpg",
+  "work-nyu-idm-social-2": "projects/NYU_IDM_Social/idm_carousel_02.jpg",
+  "work-nyu-idm-social-3": "projects/NYU_IDM_Social/idm_carousel_04.jpg",
+  "work-nyu-idm-social-4": "projects/NYU_IDM_Social/idm_carousel_07.jpg",
+  "work-nyu-idm-social-5": "projects/NYU_IDM_Social/idm_carousel_08.jpg",
+  "work-nyu-idm-social-6": "projects/NYU_IDM_Social/idm_carousel_09.jpg",
+  "work-nyu-idm-social-7": "projects/NYU_IDM_Social/idm_carousel_10.jpg",
 
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
@@ -946,7 +948,7 @@ function enableWheelScroll(track) {
 /* Extra project images, or three stand-ins when you haven't added any */
 function gallery(work) {
   if (work.gallery === false) return "";
-  const photos = [1, 2, 3, 4, 5, 6]
+  const photos = [1, 2, 3, 4, 5, 6, 7, 8]
     .map((n) => assets[`work-${slug(work)}-${n}`])
     .filter(Boolean);
   if (photos.length) {
