@@ -65,14 +65,22 @@ const FILES = {
   "work-noz-2": "projects/Noz/noz_about_us.jpg",
   "work-noz-3": "projects/Noz/noz_about_product.jpg",
   "work-noz-4": "projects/Noz/noz_abandoned_cart_email.jpg",
-  "work-nyu-idm-social": "projects/NYU_IDM_Social/idm_thumbnail.jpg",
-  "work-nyu-idm-social-1": "projects/NYU_IDM_Social/idm_carousel_01.jpg",
-  "work-nyu-idm-social-2": "projects/NYU_IDM_Social/idm_carousel_02.jpg",
-  "work-nyu-idm-social-3": "projects/NYU_IDM_Social/idm_carousel_04.jpg",
-  "work-nyu-idm-social-4": "projects/NYU_IDM_Social/idm_carousel_07.jpg",
-  "work-nyu-idm-social-5": "projects/NYU_IDM_Social/idm_carousel_08.jpg",
-  "work-nyu-idm-social-6": "projects/NYU_IDM_Social/idm_carousel_09.jpg",
-  "work-nyu-idm-social-7": "projects/NYU_IDM_Social/idm_carousel_10.jpg",
+  "work-nyu-social-media-coordinator":
+    "projects/NYU_IDM_Social/idm_thumbnail.jpg",
+  "work-nyu-social-media-coordinator-1":
+    "projects/NYU_IDM_Social/idm_carousel_01.jpg",
+  "work-nyu-social-media-coordinator-2":
+    "projects/NYU_IDM_Social/idm_carousel_02.jpg",
+  "work-nyu-social-media-coordinator-3":
+    "projects/NYU_IDM_Social/idm_carousel_04.jpg",
+  "work-nyu-social-media-coordinator-4":
+    "projects/NYU_IDM_Social/idm_carousel_07.jpg",
+  "work-nyu-social-media-coordinator-5":
+    "projects/NYU_IDM_Social/idm_carousel_08.jpg",
+  "work-nyu-social-media-coordinator-6":
+    "projects/NYU_IDM_Social/idm_carousel_09.jpg",
+  "work-nyu-social-media-coordinator-7":
+    "projects/NYU_IDM_Social/idm_carousel_10.jpg",
 
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
