@@ -883,6 +883,22 @@ footer button {
   margin-top: 12px;
 }
 
+/* live Figma embed */
+.figma {
+  margin: 24px 0;
+}
+.figma iframe {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  border: 0;
+  border-radius: 16px;
+  background: var(--surface);
+}
+.figma .btn {
+  margin-top: 12px;
+}
+
 .prj .rs p {
   max-width: 62ch;
 }

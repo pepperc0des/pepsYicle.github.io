@@ -81,6 +81,9 @@ const FILES = {
     "projects/NYU_IDM_Social/idm_carousel_09.jpg",
   "work-nyu-social-media-coordinator-7":
     "projects/NYU_IDM_Social/idm_carousel_10.jpg",
+  "work-labubu-journal": "projects/LabubuJournal/labubu_login.png",
+  "work-labubu-journal-1": "projects/LabubuJournal/labubu_collection.png",
+  "work-labubu-journal-2": "projects/LabubuJournal/labubu_signup.png",
 
   // extra images for a project page grid, for example:
   // "work-isometric-room-1": "projects/Isometric_Room_detail.jpg",
@@ -520,6 +523,41 @@ const WORK = [
       ],
     ],
     pdf: ["projects/NYU_IDM_Social/idm_case_study.pdf"],
+  },
+  {
+    t: "Labubu Journal",
+    d: "UX/UI Design",
+    y: 2026,
+    r: "UX/UI Designer",
+    c: ["#0A715C", "#EDEDED", "#229B36"],
+    k: 11,
+    figma:
+      "https://www.figma.com/design/xlhiiozWUAvfNOLZhTkgnX/Labubu-Journal?node-id=217-7",
+    s: [
+      [
+        "Overview",
+        `Labubu Journal is a desktop web app concept for Labubu collectors to keep track of the figures they own. Users sign in to a personal
+        account and browse their collection series by series, so every figure they've found has a place to live.`,
+      ],
+      [
+        "Tools",
+        `I designed the wireframes in Figma, building the screens as reusable frames and components so the pages share one consistent layout.`,
+      ],
+      [
+        "Process",
+        `I started with the account flow: Log In, Sign Up, Forgot Password and Reset Password. All four screens share the same layout, with a Labubu
+        photo on the left and the bubbly "Labubu Journal" logo above a soft yellow form card on the right. Only the form changes from screen to screen, so moving
+        between them feels seamless. Each form keeps to the essentials, with links between Log In, Sign Up and Forgot Password, a show/hide toggle on
+        password fields, and a single green call-to-action button. After signing in, users land on My Collection. A "Select a series" dropdown at the top
+        filters the collection, and the figures sit on tall rounded cards in a horizontal carousel with left and right arrows and a scrollbar to browse.
+        Each card gets its own colour gradient that matches the color of the selected figure. The profile and log-out icons stay in the top corner.`,
+      ],
+      [
+        "Outcome",
+        `The result is a five-screen wireframe covering the full journey from creating an account to browsing a collection. Explore the full file below,
+        and click into any frame to take a closer look.`,
+      ],
+    ],
   },
 ];
 
@@ -1053,6 +1091,17 @@ const pdfHTML = (work) =>
     )
     .join("");
 
+/* Live Figma embed: figma: "https://www.figma.com/design/..." (paste the normal Share link;
+   the file must be set to "Anyone with the link can view") */
+const figmaHTML = (work) =>
+  work.figma
+    ? `<div class="figma">
+         <iframe src="https://www.figma.com/embed?embed_host=share&url=${encodeURIComponent(work.figma)}"
+           title="${work.t} wireframe in Figma" loading="lazy" allowfullscreen></iframe>
+         <a class="btn" href="${work.figma}" target="_blank" rel="noopener">Open in Figma</a>
+       </div>`
+    : "";
+
 function projectPage(projectSlug) {
   const index = WORK.findIndex((w) => slug(w) === projectSlug);
   if (index < 0) {
@@ -1079,6 +1128,7 @@ function projectPage(projectSlug) {
             `<div class="rs"><h2>${heading}</h2><p>${text}</p></div>`,
         )
         .join("")}
+      ${figmaHTML(work)}
       ${reelsHTML(work)}
       ${pdfHTML(work)}
       <div class="pgal">${gallery(work)}</div>
