@@ -135,30 +135,27 @@ const DEFAULT_NOTE = "";
 const adoptSections = (breed) => [
   [
     "Overview",
-    `An adoption advertisement design for ${breed} cats. It is one of a series of three adoption posters, one each for a Ragdoll, a Maine Coon and a British Shorthair, designed to share the same look and process.`,
+    `A self-initiated adoption poster for ${breed} cats, part of a three-poster series (Ragdoll, Maine Coon and British Shorthair) built on one shared layout system.
+    The brief I set myself: in a few seconds, a passerby should notice the cat, connect with it, and know how to adopt.`,
   ],
   [
     "Tools",
-    `I used only Canva for the design and layout, and Pinterest for the reference photos of cats. These are not my own photos.`,
+    `Canva for design and layout; Pinterest for reference photography. The cat photos are not my own.`,
   ],
   [
     "Process",
-    `I was waiting at the movie theater, looking at some movie posters, when I suddenly had the idea to make an ad poster for cats.
-    I'm a big fan of cats myself and hope to have one of my own someday. Knowing how expensive cats are to purchase, I thought it would be perfect to
-    create an ad for cats that are up for adoption. I used Pinterest to look for appealing cat pictures and imported them into Canva.
-    I started with the message: "ADOPT ME" had to be the first thing anyone reads, so it's the largest text in a bold color, with the contact details
-    kept small underneath. For the look, I chose a warm, soft color palette with one cool accent color for the breed name and traits, so the cat's
-    photos and name stand out against the background. I used two photos on each poster for different jobs: a framed portrait to show the cat's face, and a
-    looser cutout to show its personality. Finally, I added six traits for the breed, each with a paw icon, so a viewer can scan the personality quickly
-    instead of reading a paragraph. Paw prints repeat through the layout to tie the sections together. Because the three posters share the same structure,
-    I could swap the photos, colors and traits for each breed and have them still read as a set.`,
+    `The idea came from studying movie posters while waiting at a theater: big, simple messages that read from across a room. Since cats are expensive to buy,
+    I wanted to make the case for adoption instead. I built the hierarchy around one message: "ADOPT ME" is the largest, boldest element, with contact details
+    kept small underneath. A warm, soft palette with a single cool accent for the breed name and traits keeps the cat and its name in focus. Each poster uses two
+    photos with different jobs: a framed portrait to show the cat's face, and a looser cutout to show its personality. Six breed traits, each marked with a paw icon,
+    let viewers scan the personality instead of reading a paragraph, and repeating paw prints tie the sections together. Because all three posters share the same
+    structure, I could swap the photos, colors and traits for each breed and the series still reads as one set.`,
   ],
   [
     "Outcome",
-    `These ads were never published to the public or on any social media platform. They were experimental and made for practice.
-    I realized I should have made them more personal to each cat, giving them a voice rather than just describing them by breed. Another thing I would change
-    is using photos of cats that are actually up for adoption at local adoption centers, which would make the ads more meaningful and more effective.
-    I would also like to make a series of these ads for more cat breeds, and maybe even different animals.`,
+    `A consistent, reusable poster system that scales to a new breed with only a content swap. This was a practice piece and was not published.
+    In the next iteration I would write each ad in the cat's own voice rather than describing the breed, feature real cats available at local shelters
+    so the ads lead to an actual adoption, and extend the series to more breeds and other animals.`,
   ],
 ];
 
@@ -205,23 +202,22 @@ const WORK = [
     s: [
       [
         "Overview",
-        `A 3D isometric bedroom, modeled as a cutaway cube so the whole room can be seen at once. The goal was to build a 
-        small, cozy scene that feels lived in, using simple shapes, a limited color palette and moody lighting.`,
+        `A 3D isometric bedroom, modeled as a cutaway cube so the entire room reads from a single viewpoint. The goal was a small, cozy scene
+        that feels lived in, achieved with simple shapes, a limited color palette and moody lighting.`,
       ],
-      ["Tools", `I modeled, lit and rendered the whole scene in Blender.`],
+      ["Tools", `Blender for modeling, materials, lighting and rendering.`],
       [
         "Process",
-        `I started with the room shell: two walls and a floor set at an isometric angle, so everything inside is visible from one fixed viewpoint. 
-        I then blocked out the furniture with basic shapes before adding detail: a bed with a pillowed headboard, a nightstand with a lamp, a wardrobe, and 
-        a desk with a monitor, keyboard, mouse and a small stack of books. A round rug and two empty picture frames on the wall fill the space and add 
-        personality. For the colors, I kept the room warm and muted, with dark wood and floor tiles, a terracotta blanket and tan pillows, so the bed 
-        becomes the focal point. The lighting does most of the storytelling: a warm lamp and ceiling glow light the inside, while a cooler light comes 
-        through the window, which suggests the time of day.`,
+        `I began with the room shell, two walls and a floor set at an isometric angle, so everything inside is visible from one fixed viewpoint.
+        I blocked out the furniture in basic shapes before adding detail: a bed with a pillowed headboard, a nightstand and lamp, a wardrobe, and
+        a desk with a monitor, keyboard, mouse and a small stack of books. A round rug and two picture frames fill the space and add personality.
+        I kept the palette warm and muted (dark wood, floor tiles, a terracotta blanket and tan pillows) so the bed becomes the focal point.
+        Lighting carries the story: a warm lamp and ceiling glow light the interior, while cooler light through the window hints at the time of day.`,
       ],
       [
         "Outcome",
-        `The finished render is a cozy little room that is visible from one angle. One thing I would do differently is fill the empty picture frames with artwork, and 
-        add more small details like books, plants or clothes to make the room feel more lived in. Through this process, I learned how to make soft materials, like blankets, pillows and curtains.`,
+        `A finished render of a cozy, readable room. Along the way I learned to model and shade soft materials such as blankets, pillows and curtains.
+        In a next pass I would fill the empty frames with artwork and add small props, like books, plants and clothing, to push the lived-in feel further.`,
       ],
     ],
   },
@@ -237,33 +233,27 @@ const WORK = [
     s: [
       [
         "Overview",
-        `A playful kids' menu for Sky High Diner, an airplane-themed diner at an international airport. 
-        Every dish has an aviation pun for a name, and the layout is built so a child can understand it and a parent can order from it quickly.
-        The goal was to make a menu that is fun to look at and easy to understand for both kids and parents`,
+        `A kids' menu for Sky High Diner, an airplane-themed diner at an international airport, where every dish has an aviation pun for a name.
+        The challenge was designing for two audiences at once: fun enough to hold a child's attention, and clear enough for a parent to order from quickly.`,
       ],
       [
         "Tools",
-        `I used InDesign for the majority of the design, the layout, the typography and the checkered background. I used Blender for the 3D food models and the Sky High Diner bottle.`,
+        `InDesign for layout, typography and the checkered background; Blender for the 3D food models and the branded Sky High Diner milk bottle.`,
       ],
       [
         "Process",
-        `From left to right at the bottom of the page, I started with a plain layout to settle the content: 
-        main dishes, sides, drinks and ice cream, with each dish's description and price. At the same time,
-        I established a rough draft of the font hierarchy by the levels of importantance on a menu. In the second round I had an idea of incorporating some form of art and 
-        I went with 3D models to spice it up and move away from the traditional 2D artstyle most kids' menus have,
-        I placed the rendered food objects according to where they lie on the menu. So the 3D ice cream model would be placed in the ice cream section of the menu and the hot dog and burger 
-        would be placed respectively in the main dishes section. In the third round, I gave the menu its final shape: the bubbly typography, the clouds to go along with the airport theme,
-        more 3D art placed strategically, and even included a logo for the diner as suggested by the title and imprinted on the Milk bottle. For the final piece, I thought the spacing could be way better
-        with how the dishes are laid out on the menu with the placement of the 3D models. So I created individual boxes for each dish category and align the text as they fit. I added a blue checkered background to fit the "diner" vibe
-        and I added a border to give the menu more characteristics and to act as clouds, fitting the airport theme.`,
+        `The menu went through four rounds, shown left to right at the bottom of the page. Round one settled the content (mains, sides, drinks and ice cream,
+        each with a description and price) and a rough type hierarchy based on what diners scan for first. In round two I introduced 3D food renders to set the
+        menu apart from the flat 2D illustration most kids' menus use, placing each model in its own section: the ice cream with desserts, the burger and hot dog
+        with mains. Round three gave the menu its personality: bubbly typography, clouds that reinforce the airport theme, more renders, and a diner logo printed on
+        the milk bottle. For the final, I fixed the spacing by giving each category its own box and aligning the text within it, added a blue checkered background
+        for a classic diner feel, and framed the page with a cloud-shaped border.`,
       ],
       [
         "Outcome",
-        `The final render keeps the whole menu readable while still feeling playful and kid-friendly, and the food renders do most of the selling. 
-        One thing I would do differently if I stared this project again is keeping the consistency with the typography of the dish categories and the title of the menu. 
-        Though they are both bubbly, the title is transparent while the dish category is filled in. Another thing I would do different is having a better contrast between the
-        menu boxes and the background. Right now, in some parts of the boxes, it looks as if it blends into the background rather than being it's separate shape. So I'm thinking of 
-        changing the color of the boxes or perhaps giving it an dark outline to highlight the boxes.`,
+        `The final menu is easy to read while feeling playful, and the food renders do most of the selling. Two refinements I would make next:
+        unify the title and category typography (both are bubbly, but the title is outlined while the categories are filled), and increase contrast
+        between the menu boxes and the background, with a new box color or a dark outline, so each section reads as its own shape.`,
       ],
     ],
   },
@@ -279,29 +269,28 @@ const WORK = [
     s: [
       [
         "Overview",
-        `A design for a conceptual rock paper scissors game app. This is a prototype, a test version of an app. 
-        Players should be able to use it easily with clicks, swipes, shakes, or taps without explicit written instructions. `,
+        `A mobile prototype for a two-player rock paper scissors app. The core UX requirement: players should understand every screen through
+        taps, swipes and shakes alone, without written instructions.`,
       ],
       [
         "Tools",
-        `I used a pixel art software called Pixquare to create the rock, paper, scissor assets as well as the red and blue background.
-        For the wireframing and flowchart, I used Figma and importing my assets from Pixquare. Lastly I used Adobe After Effects for post production work
-        for the app demo video.`,
+        `Pixquare for the pixel-art rock, paper and scissors assets and the red and blue backgrounds; Figma for the flowchart, wireframes and
+        prototype; After Effects for the demo video.`,
       ],
       [
         "Process",
-        `I started by mapping the whole game with a simple flowchart: Welcome, Pair with Partner, then either a successful pairing or a pairing error that loops back to try again. 
-        From there each player chooses rock, paper or scissors, waits for the opponent, and sees the result. Keeping the flow this short meant a round could start in a few taps. 
-        I then designed each step as a mobile screen: an home screen with a Play button, a QR-code scan screen for finding an opponent, a "Scan Failed" screen with a 
-        Try again button, a versus screen once players are paired, a profile with stats, and the choose screen. For the results I designed all nine outcomes 
-        (win, lose and tie, each with rock, paper and scissors), so every combination gets its own screen. The look is built around the idea of two 
-        players facing off: the screen splits diagonally into red for the opponent and blue for you, with a pixel font and a grainy texture to give 
-        it a retro arcade feel. The same split carries through every screen so players always know which side is theirs.`,
+        `I started by mapping the full game in a flowchart: Welcome, Pair with Partner, then either a successful pairing or a pairing error that loops back to try again.
+        From there each player chooses rock, paper or scissors, waits for the opponent, and sees the result. Keeping the flow this short means a round starts in a few taps.
+        I then designed each step as a mobile screen: a home screen with a Play button, a QR-code scan screen for finding an opponent, a "Scan Failed" screen with a
+        Try Again button, a versus screen once players are paired, a profile with stats, and the choose screen. I designed all nine result states
+        (win, lose and tie for each of rock, paper and scissors) so every combination has its own screen. The visual language is built around two
+        players facing off: the screen splits diagonally into red for the opponent and blue for you, with a pixel font and grainy texture for a
+        retro arcade feel. The split carries through every screen, so players always know which side is theirs.`,
       ],
       [
         "Outcome",
-        `The result is a complete, playable prototype of a two-player rock paper scissors game, with pairing, choosing, waiting and results all connected. 
-        The video above shows the prototype in use. (Win conditions are random to simulate opponent's decision but it may not be demonstrated properly in the video, sorry!)`,
+        `A complete, clickable prototype that connects pairing, choosing, waiting and results into one flow, demonstrated in the video above.
+        Results are randomized to simulate the opponent's choice, so the demo may not show every outcome.`,
       ],
     ],
   },
@@ -309,31 +298,29 @@ const WORK = [
     t: "Playing Cards",
     d: "Graphic Design",
     y: "2025",
-    r: "Graphic Design",
+    r: "Graphic design",
     c: ["#34791B", "#1A1A1A", "#EDEDED"],
     k: 6,
     big: true,
     s: [
       [
         "Overview",
-        `A set of custom made playing cards designed with a focus on applying principles of contrast and hierarchy to clearly distinguish
-        and define each face card. Instead of numbers, visuals will be made up of geometric shapes.`,
+        `A custom deck of playing cards that uses contrast and hierarchy so each face card is clearly distinguished at a glance.
+        Instead of numerals, the card visuals are built from geometric shapes.`,
       ],
       [
         "Tools",
-        `I used Adobe Illustrator for the entire design of the project and later I printed the designs out on paper and used corner rounders to 
-        give the cards a rounded edge on the corners`,
+        `Adobe Illustrator for all card design. I printed the final deck and finished each card with a corner rounder for a production-quality edge.`,
       ],
       [
         "Process",
-        `I started off with some rough sketches of shapes I want to use for the number cards. I was already given 3 shapes to start and only needed to come up
-        with one extra one on my own. I don't have any documentation of my sketches other than the final shape I went with, which can be seen in the 3rd to 5th images.
-        Once I got my shapes, I went for the traditional poker card layout. In my head, I didn't think number cards needed an extravagant look to them, afterall their purpose is
-        to display what the number value of the card is. `,
+        `The brief supplied three geometric shapes, and I sketched options for a fourth of my own; the final shape appears in the third through fifth images.
+        For the number cards I followed the traditional poker layout. Their job is to communicate value instantly, so I kept them clean and let hierarchy,
+        not decoration, do the work. The drafts and finals below show how the face cards developed.`,
       ],
       [
         "Outcome",
-        `A set of playing cards ready to be used for entertainment purposes`,
+        `A complete, printed deck ready for play, with a consistent shape system that keeps every card readable at a glance.`,
       ],
     ],
     pdf: [
@@ -346,38 +333,35 @@ const WORK = [
   },
   {
     t: "Ubiq",
-    d: "UX/UI Design, Marketing",
+    d: "UX/UI Design, Marketing, Product Design",
     y: 2025,
-    r: "UX/UI Design, Marketing",
+    r: "UX/UI design, Marketing",
     c: ["#0A715C", "#EDEDED", "#229B36"],
     k: 7,
     big: true,
     s: [
       [
         "Overview",
-        `Ubiq is a spatial media app that turns social media into something more interactive. It uses 3D satellite mapping so users can post videos and 
-        pictures of activities they've done and pin them to the exact place on the map. Users can also message friends they've added to ask about the 
-        content of their posts. As a Product Design Intern, I worked with two other designers on testing and creating new UI designs for the app. 
-        We each worked on the same set of screens: the home page with the 3D satellite map, the user profile, the story view and the contact page. 
-        The main problem we were asked to solve was accessibility and user-friendliness.`,
+        `Ubiq is a spatial social media app: users pin photos and videos to the exact place they happened on a 3D satellite map, and can message
+        friends about their posts. As a Product Design Intern, I worked alongside two other designers to test and redesign four core screens (the
+        3D map home page, user profile, story view and contacts page), with a brief to improve accessibility and ease of use.`,
       ],
       [
         "Tools",
-        `I used Miro for the UX/UI design work and Adobe After Effects for the promotional videos.`,
+        `Miro for UX/UI exploration and design; Premiere Pro for promotional videos.`,
       ],
       [
         "Process",
-        `We started by looking at how existing social media apps lay out their interfaces and used them as inspiration for a new Ubiq layout. Each of us came up with several designs, and in the end we combined the strongest 
-        features from the different versions into one final design. One of the ideas we focused on was how people interact on Instagram, especially story reactions. Since Ubiq is 
-        all about sharing fun moments, we thought a similar feature would feel natural and make the app more engaging. Alongside the design work, we made TikTok-style marketing videos for the app. 
-        We used posts we had uploaded to Ubiq ourselves, screen-recorded ourselves opening those posts, and added voiceovers in post-production. 
-        To make them feel current, we followed trends that were popular at the time and used meme templates.`,
+        `We reviewed how established social apps structure their interfaces and used those patterns as a starting point. Each designer produced several concepts,
+        and we merged the strongest features into one final design. One focus was story reactions, modeled on Instagram: because Ubiq centers on sharing fun moments,
+        a lightweight reaction felt natural and gave users a reason to engage. In parallel, we produced TikTok-style marketing videos using real posts we had uploaded
+        to Ubiq, screen recordings of opening them, and voiceovers added in post, built on trending formats and meme templates to keep them current.`,
       ],
       [
         "Outcome",
-        `We delivered slideshows to the CEO and other top executives of the company covering our final UX/UI designs, the design process behind them, and our marketing videos 
-        along with our thinking for each one. They loved our ideas and gave us positive feedback on our work. One of our marketing videos was 
-        approved and got posted on Ubiq's Tiktok account. Though it did not perform as well as we hoped, it was still a great experience to see our work go live and be seen by the public.`,
+        `We presented our redesigns, design rationale and marketing videos to the CEO and executive team, who responded with strong positive feedback.
+        One of our videos was approved and published on Ubiq's official TikTok account. It underperformed our expectations, but taking work from concept to a
+        live audience taught me how differently real users respond than a room meant for reviewing. Our weekly presentation decks are below.`,
       ],
     ],
     pdf: [
@@ -399,34 +383,28 @@ const WORK = [
     s: [
       [
         "Overview",
-        `Sharks & Minnows is a Roblox game based on the classic schoolyard game, where one player is the shark and everyone else tries to cross the 
-        water without getting tagged. I took the playground version and turned it into an online game with its own lobby, look and menus.
-        Each round begins with one shark and the rest of the players as minnows. The shark tries to tag the minnows, and the last minnow standing becomes the shark for the next round.
-        Whenever a minnow is tagged, they turn into a shark too. I wanted to build this game because over the summer I played this game with a group of elementary kids at a summer camp I
-        worked at and I thought this would be a fun game for young kids nowadays to play online with their friends and maybe some older players would enjoy some nostalgia. 
-        I also wanted to make a game that is easy to understand and play, but still fun and engaging for the players.`,
+        `Sharks & Minnows is a Roblox adaptation of the classic schoolyard game, taken from the playground to an online game with its own lobby, visual identity and menus.
+        Each round starts with one shark; every minnow tagged becomes a shark too, and the last minnow standing is the shark for the next round. The idea came from a summer
+        camp job, where the game was a hit with elementary kids. I saw an opportunity for an easy-to-learn game young players could enjoy online with friends, with some
+        nostalgia for older players too.`,
       ],
       [
         "Tools",
-        `I built the game in Roblox Studio and made the 3D models in Blender as low-poly stylized assets. I used Figma for the game interface design
-        and general layout for review.`,
+        `Roblox Studio for the game build, Blender for the low-poly stylized 3D assets, Figma for UI design and layout review, and Claude (AI assistant) for build, scripting and testing support.`,
       ],
       [
         "Process",
-        `I started with the lobby area since it's the first thing players see and built it as a real base environment. I chose a low-poly stylized look for every asset so the whole game feels consistent and runs well. 
-        I originally turned the lobby into a forest environment but realized that would have little correlation with sharks and fishes. So I turned it into a beach and coastal setting, but keeping the mountains, and did it in phases 
-        rather than all at once. I made art rules to keep the models coherent: hard objects like wood, stone and metal stay blocky and faceted, while soft objects like plants are smoothed. 
-        For the interface, I designed a shop, a daily prize, a settings menu, an inventory menu, and a help menu. The name went through a few options, but I settled on Sharks & Minnows over Fishy Fishy because it's instantly recognizable as the game people already know
-        even though I personally grew up with Fishy Fishy. I worked with Claude, an AI assistant, throughout the project: it helped build parts of the environment, models, scripts and menus in Roblox Studio and Blender, and gave design feedback and testing help. 
-        I set the direction and made the creative decisions: the beach theme, the low-poly art rules, which menus to include, and the name. I reviewed and revised what it produced.`,
+        `I started with the lobby, since it's the first thing players see, and built it as a full base environment. A low-poly stylized look across every asset keeps the game
+        visually consistent and performant. My first pass was a forest, but it had little connection to sharks and fish, so I pivoted to a beach and coastal setting and built it in phases. 
+        I wrote art rules to keep models coherent: hard materials like wood, stone and metal stay blocky and faceted, while soft objects like plant
+        are smoothed. For the interface, I designed a shop, daily prize, settings, inventory and help menus. I chose the name Sharks & Minnows over Fishy Fishy, the version I grew up
+        with, because it's instantly recognizable to the widest audience. I used Claude throughout the project to help build parts of the environment, models, scripts and menus, and for
+        design feedback and testing. I set the direction and made the creative decisions (the beach theme, art rules, menu set and name) and reviewed and revised everything it produced.`,
       ],
       [
         "Outcome",
-        ` It's close to release and fully playable, with a lobby, shop, daily prize, settings, inventory and help menus. Some things left to do before official launch is:
-        adding more visual effects and polishing gameplay movements and more playtesting. One thing I learned from this project is that I should've have spent more time on the UI design and layout
-        because I wanted to go for something that players are familiar with but I also wanted to keep things simple and not over exaggerate the designs. Also a huge challenge was appealing to a mix audience of kids, teenagers and young adults; 
-        the player base on roblox is so diverse now that I have to take into account the different age groups and their preferences. I also learned that I should have spent more time on the game mechanics and how the game is played instead of 
-        how it looked visually, though that is also an important part. I felt like I spent more time on the visual aspect of the game and not enough time on the game mechanics and how the game is played.`,
+        `The game is fully playable and released, with a lobby, shop, daily prize, settings, inventory and help menus. On track for more updates, seasonal events and polishing the game
+        following user feedbacks.`,
       ],
     ],
   },
@@ -466,7 +444,7 @@ const WORK = [
       ],
       [
         "Outcome",
-        `The result is a working Nöz storefront where the customer persona, visuals, copy, SEO and emails all point at the same customer. The biggest thing I learned was how
+        `A working Nöz storefront where the persona, visuals, copy, SEO and email flows all point at the same customer. The biggest thing I learned was how
         much easier every decision gets once the target customer is clear: the colors, the photo, the keywords and even the tone of the emails all came from knowing who Mary
         is and what she worries about. The full final presentation and the Instagram and influencer project are below.`,
       ],
@@ -480,7 +458,7 @@ const WORK = [
     t: "NYU Social Media Coordinator",
     d: "Marketing",
     y: 2026,
-    r: "Camera operator, Social media content",
+    r: "Social media coordinator, Camera operator, Content creation",
     c: ["#0A715C", "#EDEDED", "#229B36"],
     k: 10,
     big: true,
@@ -494,7 +472,7 @@ const WORK = [
       ],
       [
         "Tools",
-        `We shot the content on campus, edited the reels in DaVinci Resolve, designed the carousel and text overlays in Canva, and used Instagram Insights
+        `On-campus shooting, DaVinci Resolve for editing reels, Canva for the carousel and text overlays, and Instagram Insights
         to track how each post performed.`,
       ],
       [
@@ -526,9 +504,9 @@ const WORK = [
   },
   {
     t: "Labubu Journal",
-    d: "UX/UI Design",
+    d: "UX/UI Design, Product Design",
     y: 2026,
-    r: "UX/UI Designer",
+    r: "UX/UI design",
     c: ["#0A715C", "#EDEDED", "#229B36"],
     k: 11,
     figma:
@@ -536,12 +514,12 @@ const WORK = [
     s: [
       [
         "Overview",
-        `Labubu Journal is a desktop web app concept for Labubu collectors to keep track of the figures they own. Users sign in to a personal
+        `Labubu Journal is a desktop web app concept that helps Labubu collectors track the figures they own. Users sign in to a personal
         account and browse their collection series by series, so every figure they've found has a place to live.`,
       ],
       [
         "Tools",
-        `I designed the wireframes in Figma, building the screens as reusable frames and components so the pages share one consistent layout.`,
+        `Figma for wireframes, built from reusable frames and components so every page shares one consistent layout.`,
       ],
       [
         "Process",
@@ -550,11 +528,11 @@ const WORK = [
         between them feels seamless. Each form keeps to the essentials, with links between Log In, Sign Up and Forgot Password, a show/hide toggle on
         password fields, and a single green call-to-action button. After signing in, users land on My Collection. A "Select a series" dropdown at the top
         filters the collection, and the figures sit on tall rounded cards in a horizontal carousel with left and right arrows and a scrollbar to browse.
-        Each card gets its own colour gradient that matches the color of the selected figure. The profile and log-out icons stay in the top corner.`,
+        Each card gets its own color gradient that matches the selected figure. The profile and log-out icons stay in the top corner.`,
       ],
       [
         "Outcome",
-        `The result is a five-screen wireframe covering the full journey from creating an account to browsing a collection. Explore the full file below,
+        `A five-screen wireframe covering the full journey from creating an account to browsing a collection. Explore the full file below,
         and click into any frame to take a closer look.`,
       ],
     ],
